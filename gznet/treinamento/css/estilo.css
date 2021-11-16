@@ -1,0 +1,470 @@
+/*############################################# Layout PadrÃ£o #*/
+/*-------------------------definiÃ§Ãµes gerais*/
+root { 
+    display: block;
+}
+img{
+    border-width: 0px;
+}
+
+.links{
+    color: #53575c;
+    width:90px;
+    line-height: 32px;
+    height: 100%;
+}
+* {
+    margin:0;
+    padding:0;
+    margin-bottom: 0px;
+}
+/*-------------------------definindo o body*/
+body{
+    background: url("../images/fundo.jpg");
+    background-repeat: repeat-x;
+    background-color:#e5eaf0;
+    font-family: arial;
+    font-size: 12px;
+}
+/*-------------------------definindo o body2*/
+#body2{
+    background-image: none;
+    background-color:#e5eaf0;
+    font-family: arial;
+    font-size: 12px;
+    margin-left: 14px;
+}
+
+/*-------------------------definindo o index*/
+#index{
+    display: block;
+    width:900px;
+    padding: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #000000;
+    height: auto;
+}
+/*-------------------------definindo o banner*/
+#banner{
+    display: block;
+    line-height: 173px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #000000;
+}
+/*-------------------------definindo o menu*/
+#menu{
+    line-height: 32px;
+    border-width: 0px;
+}
+#menu li {
+    display: block;
+    float: left;
+    list-style-type: none;
+    width: 90px;
+    line-height: 32px;
+    margin-right: 10px;
+    font-size: 8pt;
+    font-family: verdana;
+    color: #ffffff;
+    height: 100%;
+}
+#menu a{
+    text-decoration: none;
+    float:left;
+    color: #ffffff;
+    width:90px;
+    line-height: 32px;
+    height: 100%;
+    padding: 0;
+
+
+}
+#menu li:hover{
+    background-color: #99bde1;
+    line-height: 32px;
+    width: 90px;
+    cursor: pointer;
+    height: 100%;
+}
+/*-------------------------definindo o corpo*/
+#corpo{
+    position: relative;
+    display: block;
+    padding: 5px;
+    background-color: #ffffff;
+    margin-top: 32px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d6d6;
+}
+/*-------------------------definindo o rodapÃ©*/
+#rodape{
+    display: block;
+    margin-top: auto;
+    line-height: 20px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #000000;
+    margin-bottom: 0px;
+    font-size: 8pt;
+    font-family: verdana;
+    color: #437a9a;
+    text-align: center;
+}
+#rodape a{
+    text-decoration: none;
+    font-size: 8pt;
+    font-family: verdana;
+    color: #437a9a;
+}
+p{
+    float: left;
+}
+/*############################################# Index #*/
+#tabs{
+    display: block;
+}
+#aba-2 , #aba-3, #aba-4, #aba-5{
+    padding-top: 15px;
+    text-align: center;
+    width: 850px;
+}
+#aba-1,#aba-5{
+    height: 420px;
+    width: 850px;
+    vertical-align: middle;
+}
+#lista_treinamentos{
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 330px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e3e7e7;
+
+}
+#lista_treinamentos p{
+    clear: both;
+    width: 100%;
+    margin: 0;
+}
+#lista_treinamentos span {
+    float: left;
+    padding: 0;
+    border-left: 1px solid #e3e7e7;
+    border-bottom: 1px solid #e3e7e7;
+    line-height: 180%;
+
+}
+/*Coluna1*/
+#lista_treinamentos span.col1 {
+    width: 245px;
+    background: url("../images/fundo_tab_agenda.jpg");
+    font-weight: bold;
+    color: #53575c;
+    border-left: 0px;
+    padding-left: 5px;
+}
+#lista_treinamentos span.dadocol1 {
+    width: 250px;
+    border-left: 0px;
+}
+/*Coluna2*/
+#lista_treinamentos span.col2 {
+    width: 79px;
+    background: url("../images/fundo_tab_agenda.jpg");
+    font-weight: bold;
+    color: #53575c;
+    line-height: 180%;
+}
+#lista_treinamentos a{
+    line-height: 180%;
+}
+#lista_treinamentos span.dadocol2 {
+    width: 79px;
+}
+#lista_treinamentos li {
+    text-decoration:none;
+}
+#intro{
+    position: relative;
+    margin-top: 5px;
+    width: 500px;
+    height: 407px;
+    float: left;
+    border: 1px solid #e3e7e7;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 407px;
+}
+#elearning{
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 330px;
+    height: 200px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e3e7e7;
+}
+#requisitos{
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 330px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e3e7e7;
+}
+#requisitos span.titulo {
+    width: 325px;
+    background: url("../images/fundo_tab_agenda.jpg");
+    font-weight: bold;
+    color: #53575c;
+    border-left: 0px;
+    line-height: 180%;
+    padding-left: 5px;
+}
+#requisitos span.dadocol1 {
+    width: 310px;
+    border-left: 0px;
+}
+#requisitos p{
+    clear: both;
+    width: 100%;
+    margin: 0;
+}
+#requisitos span {
+    float: left;
+    padding: 0;
+    border-left: 1px solid #e3e7e7;
+    border-bottom: 1px solid #e3e7e7;
+    line-height: 180%;
+}
+#requisitos li{
+    margin-left: 30px;
+    list-style-type: none;
+}
+#requisitos a{
+    text-decoration: none;
+    line-height: 130%;
+}
+/*############################################# PÃ¡gina Certificados #*/
+#tab_certificados span{
+    display: block;
+    margin-left: 15px;
+    line-height: 25px;
+
+
+}
+#tab_certificados img{
+    padding-right: 3px;
+    vertical-align: middle;
+    cursor:help;
+}
+
+#tab_certificados p{
+    line-height: 32px;
+    width:100%;
+    background: url("../images/fundo_div_cert.png");
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color: #ffffff;
+    vertical-align: middle;
+    padding-left: 3px;
+    border: 0px;
+    margin-left: -13px;
+}
+#tab_certificados a{
+    text-decoration: none;
+    color: #000000;
+
+}
+
+#tab_certificados {
+            visibility: visible;
+}
+#tab_certificados{
+
+}
+ .info{
+        position: fixed;
+        padding: 5px;
+        font-size: 12px;
+        line-height: 20px;
+        width:435px;
+        border:5px solid #d6d6d6;
+        height: auto;
+	right:0px;
+        z-index:1;
+        visibility: hidden;
+        background: url("../images/logo_cqgz_on.jpg");
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        bottom: 0px;
+        
+}
+.cursor{
+    cursor: help;
+
+}
+
+/*-------------------------definindo divflutuante*/
+#posicao{
+    width: 100%;
+    margin-top: 205px;
+    position: fixed;
+    float: left;
+    margin-bottom: 0px;
+}
+#aviso{
+
+    position: relative;
+    float: right;
+    background: url("../images/bg_sidebar.jpg");
+    background-repeat: no-repeat;
+    line-height: 32px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #ffffff;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #000000;
+    z-index: 1;
+
+}
+#legenda{
+    position: relative;
+    float: right;
+    clear: right;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    line-height: 180%;
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #53575c;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d6d6;
+    z-index: 1;
+
+}
+#legenda img{
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+/*############################################# PÃ¡gina Agenda #*/
+#tabela_treinamentos{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    margin-top: 0px;
+}
+#tabela_treinamentos p{
+    clear: both;
+    width: 100%;
+    margin: 0;
+}
+#tabela_treinamentos span {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid #e3e7e7;
+    border-bottom: 1px solid #e3e7e7;
+    line-height: 180%;
+
+}
+/*Coluna1*/
+#tabela_treinamentos span.col1 {
+    width: 410px;
+    background: url("../images/fundo_tab_agenda.jpg");
+    font-weight: bold;
+    color: #53575c;
+    border-left: 0px;
+}
+#tabela_treinamentos span.dadocol1 {
+    width: 410px;
+    border-left: 0px;
+}
+/*Coluna2*/
+#tabela_treinamentos span.col2 {
+    width: 80px;
+    background: url("../images/fundo_tab_agenda.jpg");
+    font-weight: bold;
+    color: #53575c;
+}
+#tabela_treinamentos span.dadocol2 {
+    width: 80px;
+}
+/*Coluna3*/
+#tabela_treinamentos span.col3 {
+    width: 80px;
+    background: url("../images/fundo_tab_agenda.jpg");
+    font-weight: bold;
+    color: #53575c;
+}
+#tabela_treinamentos span.dadocol3 {
+    width: 80px;
+}
+/*Coluna4*/
+#tabela_treinamentos span.col4 {
+    width: 130px;
+    background: url("../images/fundo_tab_agenda.jpg");
+    font-weight: bold;
+    color: #53575c;
+}
+#tabela_treinamentos span.dadocol4 {
+    width: 130px;
+}
+/*Coluna5*/
+#tabela_treinamentos span.col5 {
+    width: 80px;
+    background: url("../images/fundo_tab_agenda.jpg");
+    font-weight: bold;
+    color: #53575c;
+    border-left: 1px;
+}
+#tabela_treinamentos span.dadocol5 {
+    width: 80px;
+}
+/*Ã�rea de avisos*/
+#tabela_treinamentos li{
+    margin-left: 30px;
+    line-height: 180%;
+}
+#tabela_treinamentos p.aviso{
+    clear: both;
+    width: 100%;
+    line-height: 32px;
+    margin-left: -15px;
+    background: url("../images/fundo_div_cert.png");
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color: #ffffff;
+    vertical-align: middle;
+    padding-left: 3px;
+    border: 0px;
+}
+#w3c{
+    position: relative;
+    float: left;
+    clear: left;
+    bottom: 0px;
+}

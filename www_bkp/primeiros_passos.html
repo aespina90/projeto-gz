@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<title>Primeiros Passos</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="GZ Sistemas" />
+	<meta name="author" content="GZ Sistemas" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/social-icons.css" type="text/css" media="screen" />
+	<link rel='stylesheet' type='text/css' href='https://painel.gzcloud.com.br/www/js/ui/jquery-ui.min.css' />
+	<link rel='stylesheet' type='text/css' href='https://painel.gzcloud.com.br/www/plugins/charts-morrisjs/morris.css' />
+	<link rel='stylesheet' type='text/css' href='https://painel.gzcloud.com.br/www/plugins/codeprettifier/prettify.css' />
+	<link rel='stylesheet' type='text/css' href='https://painel.gzcloud.com.br/www/plugins/fullcalendar/fullcalendar.css' />
+	<link rel='stylesheet' type='text/css' href='https://painel.gzcloud.com.br/www/plugins/form-toggle/toggles.css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css' />
+	<link href="https://painel.gzcloud.com.br/www/plugins/toastr/toastr.min.css" rel="stylesheet" type='text/css' />
+	<script 	src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#menu").load("menu.html");
+			$("#rodape").load("footer.html");
+		});
+	</script>
+		<!-- <link href="less/styles.less" rel="stylesheet/less" media="all">  -->
+	<link rel="shortcut icon" href="img/logo1.png" type="img/favicon.ico" />
+</h:head>
+
+<body class="focusedform">
+<div id="menu">
+
+</div>
+	<div class="container">
+		<div class="row">
+			<span>&nbsp;</span>
+		</div>
+
+
+		<div class="text-center">
+			<div>
+			<span id="animationSandbox" class="fadeInLeftBig animated" style="display: block;">
+				<img src="img/logoweb.png" alt="Logo" class="brand"/>
+			</span>
+					<span id="animationSandbox" class="fadeInRightBig animated" style="display: block;">
+						<h1 class="text-danger">PRIMEIROS PASSOS - GZ Cloud Basic</h1>
+					</span>
+			</div>
+		</div>
+			<br>
+			<div class="row">
+					<div class="col-md-12">
+			        <div class="panel panel-primary" style="width:100%">
+			            <div class="panel-heading">
+			                <h4>Entenda</h4>
+			            </div>
+			            <div class="panel-body">
+											<div class="col-md-12">
+											</div>
+											<h3>Passos iniciais</h3>
+											<p>Para uma melhor utilização da sua Retaguarda, os seguintes passos são essenciais para iniciar seus primeiros passos:</p>
+											<ol>
+												<li>Cadastros.</li>
+												<ol>
+													<br>
+													<li>Revisar a senha do operador e supervisor dentro de cadastros </li>
+													<br>
+													<li>Cadastrar um produto</li>
+													<br>
+												</ol>
+												<li>Gerenciamento de terminais:</li>
+												<br>
+												<ol>
+													<li>Vincular terminal </li>
+													<br>
+													<li>Confirmar tipos de pagamento já cadastrados</li>
+													<br>
+												</ol>
+												<li>Após realizar vendas, você terá a emissao de relatórios disponíveis.</li>
+											</ol>
+											<br>
+			               <p><strong>Navegue atraves dos itens abaixo para aprender a utilizar a sua Retaguarda GZ Cloud.</strong></p>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<div class="row">
+				<!--accordion Cadastros-->
+				<div class="col-md-4">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+							<h4>Cadastros</h4>
+						</div>
+						<div class="panel-body">
+							<div id="accordioninpanel" class="accordion-group">
+								<div class="accordion-item">
+									<a class="accordion-title" data-toggle="collapse" data-parent="#accordioninpanel" href="#operadores"><h4>Operadores</h4></a>
+									<div id="operadores" class="collapse">
+										<div class="accordion-body">
+											<img src="img/telaoperador.png" alt="img" width="300px" height="200px">
+											<br></br>
+											<button class="btn btn-gzsistemas btn-label"> Novo</button> -  Com esse botao localizado na parte superior direita da tela, voce consegue adicionar novos operadores para seu estabelecimento, incluindo as informacoes necessárias(Codigo, Nome, Senha e Empresa)
+											<br>
+											<button class="btn btn-success btn-label">Salvar</button> -Apos incluir as informacoes, clicando no botao salvar, você consegue salvar o operador para seu estabelecimento
+											<br>
+											<button class="btn btn-gzsistemas btn-label">Voltar</button> -Caso nao queira adicionar novo operador clique no botao e volte para a pagina anterior.
+											<br>
+											<button class="btn btn-gzsistemas btn-label"> Acoes</button> - Neste botao voce consegue editar as informacoes ou excluir o cadastro do operador
+											<br>
+											<button class="btn btn-success btn-label">?</button> - Com esse botao você consegue obter informacoes sobre as paginas que esta utilizando.
+											<br>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<a class="accordion-title" data-toggle="collapse" data-parent="#accordioninpanel" href="#supervis"><h4>Supervisores</h4></a>
+									<div id="supervis" class="collapse">
+										<div class="accordion-body">
+											<img src="img/telasupervisor.png" alt="img" width="300px" height="200px">
+											<br></br>
+											<button class="btn btn-gzsistemas btn-label"> Novo</button> -  Com esse botao localizado na parte superior direita da tela, voce consegue adicionar novos operadores para seu estabelecimento, incluindo as informacoes necessárias(Codigo, Nome, Senha, Empresa e Perfil de permissoes)
+											<br>
+											<button class="btn btn-success btn-label">Salvar</button> -Apos incluir as informacoes, clicando no botao salvar, você consegue salvar o operador para seu estabelecimento
+											<br>
+											<button class="btn btn-gzsistemas btn-label">Voltar</button> -Caso nao queira adicionar novo operador clique no botao e volte para a pagina anterior.
+											<br>
+											<button class="btn btn-gzsistemas btn-label"> Acoes</button> - Neste botao voce consegue editar as informacoes ou excluir o cadastro do operador
+											<br>
+											<button class="btn btn-success btn-label">?</button> - Com esse botao você consegue obter informacoes sobre as paginas que esta utilizando.
+											<br>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<a class="accordion-title" data-toggle="collapse" data-parent="#accordioninpanel" href="#prod"><h4>Produtos</h4></a>
+									<div id="prod" class="collapse">
+										<div class="accordion-body">
+											<img src="img/telaproduto.png" alt="img" width="300px" height="200px">
+											<br></br>
+											Apos entrar no icone Produtos, voce ira ver alguns dos botoes a seguir:
+											<br></br>
+											<input type="text" placeholder="Código ou Descrição" size="15" disabled  name="txt-pesquisa"> - Neste campo você consegue pesquisar por Codigo ou Descrição de produtos.
+											<br></br>
+											<button class="btn btn-gzsistemas btn-label"> Pesquisar</button> - Apos preencher o campo acima voce ira pesquisar com as informacoes preenchidas, retornando a informacao solicitada
+											<br></br>
+											<button class="btn btn-gzsistemas btn-label"> Novo</button> -  Com esse botao localizado na parte superior direita da tela, voce consegue adicionar novos operadores para seu estabelecimento, incluindo as informacoes necessárias(Codigo, Nome, Senha, Empresa e Perfil de permissoes)
+											<br></br>
+											<button class="btn btn-success btn-label">Salvar</button> -Apos incluir as informacoes, clicando no botao salvar, você consegue salvar o operador para seu estabelecimento
+											<br></br>
+											<button class="btn btn-gzsistemas btn-label">Voltar</button> -Caso nao queira adicionar novo operador clique no botao e volte para a pagina anterior.
+											<br></br>
+											<button class="btn btn-gzsistemas btn-label"> Acoes</button> - Neste botao voce consegue editar as informacoes ou excluir o cadastro do operador
+											<br></br>
+											<button class="btn btn-success btn-label">?</button> - Com esse botao você consegue obter informacoes sobre as paginas que esta utilizando.
+											<br>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--accordion Gerenciamento--->
+				<div class="col-md-4">
+					<div class="panel panel-danger1">
+						<div class="panel-heading">
+							<h4>Gerenciamento de Terminais</h4>
+						</div>
+						<div class="panel-body">
+							<div id="accordioninpanel" class="accordion-group">
+								<div class="accordion-item">
+									<a class="accordion-title" data-toggle="collapse" data-parent="#accordioninpanel" href="#term"><h4>Terminais</h4></a>
+									<div id="term" class="collapse">
+										<div class="accordion-body">
+											<img src="img/telaequipa.png" alt="img" width="300px" height="200px">
+											<br></br>
+											<input type="text" placeholder="Procurar..." size="15" disabled  name="txt-pesquisa"> - Neste campo você consegue pesquisar por Codigo ou Descrição de produtos.
+											<br></br>
+											<button class="btn btn-gzsistemas btn-label"> Novo</button> -  Com esse botao localizado na parte superior direita da tela, voce consegue adicionar novos operadores para seu estabelecimento, incluindo as informacoes necessárias(Codigo, Nome, Senha, Empresa e Perfil de permissoes)
+											<br></br>
+											<button class="btn btn-success btn-label">Salvar</button> -Apos incluir as informacoes, clicando no botao salvar, você consegue salvar o operador para seu estabelecimento
+											<br></br>
+											<button class="btn btn-gzsistemas btn-label">Voltar</button> -Caso nao queira adicionar novo operador clique no botao e volte para a pagina anterior.
+											<br></br>
+											<button class="btn btn-gzsistemas btn-label"> Acoes</button> - Neste botao voce consegue editar as informacoes ou excluir o cadastro do operador
+											<br></br>
+											<button class="btn btn-success btn-label">?</button> - Com esse botao você consegue obter informacoes sobre as paginas que esta utilizando.
+											<br>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<a class="accordion-title" data-toggle="collapse" data-parent="#accordioninpanel" href="#pag"><h4>Pagamentos</h4></a>
+									<div id="pag" class="collapse">
+										<div class="accordion-body ">
+											<img src="img/telapagamento.png" alt="img" width="300px" height="200px">
+											<br></br>
+											<button class="btn btn-gzsistemas btn-label"> Novo</button> -  Com esse botao localizado na parte superior direita da tela, voce consegue adicionar novos operadores para seu estabelecimento, incluindo as informacoes necessárias(Codigo, Nome, Senha e Empresa)
+											<br>
+											<button class="btn btn-success btn-label">Salvar</button> -Apos incluir as informacoes, clicando no botao salvar, você consegue salvar o operador para seu estabelecimento
+											<br>
+											<button class="btn btn-gzsistemas btn-label">Voltar</button> -Caso nao queira adicionar novo operador clique no botao e volte para a pagina anterior.
+											<br>
+											<button class="btn btn-gzsistemas btn-label"> Acoes</button> - Neste botao voce consegue editar as informacoes ou excluir o cadastro do operador
+											<br>
+											<button class="btn btn-success btn-label">?</button> - Com esse botao você consegue obter informacoes sobre as paginas que esta utilizando.
+											<br>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<a class="accordion-title" data-toggle="collapse" data-parent="#accordioninpanel" href="#com"><h4>Comunicacao</h4></a>
+									<div id="com" class="collapse">
+										<div class="accordion-body ">
+											<img src="img/telacomun.png" alt="img" width="300px" height="200px">
+											<br></br>
+											<div class="text-center">
+												<img src="img/qr.png" alt="img" >
+											</div>
+											<br>  QR Code para escanear e entra no PDVmobile
+											<br></br>
+											<button class="btn btn-success btn-label">?</button> - Com esse botao você consegue obter informacoes sobre as paginas que esta utilizando.
+											<br>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--accordion ???-->
+				<div class="col-md-4">
+					<!--<div class="panel panel-danger2">
+						<div class="panel-heading">
+							<h4>Consultas e relatórios</h4>
+						</div>
+						<div class="panel-body">
+							<div id="accordioninpanel" class="accordion-group">
+								<div class="accordion-item">
+									<a class="accordion-title" data-toggle="collapse" data-parent="#accordioninpanel" href="#1"><h4>???</h4></a>
+									<div id="1" class="collapse">
+										<div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<a class="accordion-title" data-toggle="collapse" data-parent="#accordioninpanel" href="#2"><h4>???</h4></a>
+									<div id="2" class="collapse">
+										<div class="accordion-body ">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			<br>
+			<div class="text-center">
+				<a class="btn" style="background-color:#014563; color:white;" href="https://login.gzcloud.com.br/seguro/dashboard.jsf">CONTINUE USANDO O SISTEMA</a>
+				<a class="btn" style="background-color:#014563; color:white;" href="https://www.gzcloud.com.br">NAVEGUE PARA O SITE GZ CLOUD</a>
+				<br>&nbsp;</br>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<!-- wrapper-bottom -->
+<div id="rodape">
+
+</div>
+	<!-- Font Awesome Script -->
+	<script defer src="vendor/fontawesome/svg-with-js/js/fontawesome-all.js"></script>
+
+	<!-- Personal Script -->
+	<script defer src="js/index.js"></script>
+
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/jquery-1.10.2.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/bootstrap.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/enquire.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/jquery.cookie.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/jquery.nicescroll.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/ui/jquery-ui.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/plugins/codeprettifier/prettify.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/plugins/form-toggle/toggle.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/plugins/fullcalendar/fullcalendar.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/demo/demo-calendar.js'></script>
+	<script type="text/javascript" src='https://painel.gzcloud.com.br/www/plugins/toastr/toastr.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/placeholdr.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/application.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/util.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/dash.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/script.js'></script>
+	<script src="https://gzsistemas.tomticket.com/chat/balaofixo/EP12069/"></script>
+	<!-- FOOTER -->
+
+</body>
+
+</html>

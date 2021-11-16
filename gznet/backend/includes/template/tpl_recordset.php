@@ -1,0 +1,86 @@
+<?php
+/**
+* ./includes/template/tpl_recordset.php
+* @author Jeancarlo Finck projetos@logicadigital.com.br
+* @copyright (c) 2007 Lógica Digital
+* Descrição: Grava os dados para paginação e conecta ao banco de dados.
+*/
+
+//*** Conexão com o banco de dados - Dados de paginação
+	// Seleção de registros da tabela
+	$rs_sql     = 'SELECT * FROM '. $default['tabela'] ;
+	// Filtragem de busca
+	if ( $var_busca != '' )
+	{
+	  	if ( $rs_teste == '' )
+	  	{
+	  		$rs_busca = ' WHERE ' . $default['busca'] . ' LIKE "%' . $var_busca . '%"' ;
+	  	}
+	  	else
+	  	{
+	  		$rs_busca = ' AND ' . $default['busca'] . ' LIKE "%' . $var_busca . '%"' ;
+	  	}
+	}
+	// Atribuição do comando
+	$rs_sql    .= $rs_teste . $rs_busca ;
+	// Execução do comando
+	$rs_query   = mysql_query ( $rs_sql , $conexao['conexao'] ) ;
+	// Número de registros encontrados
+	$rs_linhas  = mysql_num_rows ( $rs_query ) ;
+	// Grava o número de registros encontrados
+	$var_registro = $rs_linhas ;
+	// Grava o número de páginas por itens
+	$var_totalpaginas = ceil ( $rs_linhas / $var_itens ) ;
+	// Verifica o número da página
+	if (( $var_pagina == '' ) or ( intval ( $var_pagina ) < 1 ))
+	{
+	  	// Reseta o número da página
+		$var_pagina = 1 ;
+		// Reseta o marcador de registro
+		$num_inicio = 0 ;
+	}
+	else
+	{
+		if ( intval ( $var_pagina ) > $rs_linhas )
+		{
+		  	// Seta a página como a última
+			$var_pagina = $rs_linhas ;
+			// Seta o marcador de registros para os últimos n itens
+			$num_inicio = ( $var_pagina - 1 )* $var_itens ;
+		}
+		else
+		{
+		  	// Seta o marcador de registro para os itens da página atual
+			$num_inicio = ( $var_pagina - 1 )* $var_itens ;
+		}
+	}
+
+//*** Conexão com o banco de dados - Dados para impressão
+	// Seleção de registros da tabela
+	$rs_sql     = 'SELECT * FROM '. $default['tabela'] ;
+	// Filtragem de busca
+	if ( $var_busca != '' )
+	{
+		if ( $rs_teste == '' )
+	  	{
+	  		$rs_busca = ' WHERE ' . $default['busca'] . ' LIKE "%' . $var_busca . '%"' ;
+	  	}
+	  	else
+	  	{
+	  		$rs_busca = ' AND ' . $default['busca'] . ' LIKE "%' . $var_busca . '%"' ;
+	  	}
+	}
+	// Ordenação de dados
+	if ( $var_ordem != '' )
+	{
+		$rs_ordem = ' ORDER BY '. Str_Replace ( '%20' , ' ' , $var_ordem) ;
+	}
+	// Limite de dados na tela
+	$rs_maximo  = ' LIMIT '. $num_inicio .', '. $var_itens ;
+	// Atribuição do comando
+	$rs_sql    .= $rs_teste . $rs_busca . $rs_ordem . $rs_maximo ;
+	// Execução do comando
+	$rs_query   = mysql_query ( $rs_sql , $conexao['conexao'] ) ;
+	// Número de registros encontrados
+	$rs_linhas  = mysql_num_rows ( $rs_query ) ;
+?>

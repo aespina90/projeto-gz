@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/table.css">
+</head>
+
+<body>
+  <p><strong>Observação 1 - </strong> Para produto pesado devera conter o código resumido na etiqueta Exemplo: ( Etiqueta padrão valor convencional com código de 4 dígitos )
+    <br>Etiqueta: <strong>2001234012501</strong> Cadastro: 1234
+    <br>Etiqueta: <strong>2105678012501</strong> Cadastro: 5678
+    <br>Etiqueta: <strong>2609012012501</strong> Cadastro: 9012</p>
+  <p><strong>Observação 2 - </strong>Este campo deverá ser preenchido com a letra “S” quando o mesmo se tratar de um produto composto por diversos itens, como por exemplo, <strong>CESTA BÁSICA.</strong> Para isso os itens desta fórmula deveram estar cadastrados
+    no cadastro de fórmula <strong>( FORMULA.TXT )</strong>. No ato da venda no PDV serão impressos apenas os itens desta fórmula
+    <strong>( Quantidade da Fórmula x Quantidade do PDV ) x Preço de Venda</strong></p>
+  <p><strong>Observação 3 - </strong>Para etiquetas de unidade, utilizar <strong>UN ou PC</strong>, as demais unidades serão consideradas como produto pesado.</p>
+  <p><strong>Observação 4 - </strong>Quando o produto estiver em promoção pode ser informado diretamente no campo <strong>Preço de Venda</strong>, não utilizando esse. Lembrando que caso isso seja feito o sistema não terá como saber se o produto está ou
+    não em promoção, não efetuando assim comparações a nível de desconto de cliente conveniado (Vide observações no <strong>EMPRESA.TXT, CLIENTEC.TXT e CLIENTES.TXT</strong>).</p>
+  <p><strong>Observação 5 - </strong>Informa ao PDV em que situação esse produto pode receber desconto. ( <strong>EMPRESA.TXT, CLIENTEC.TXT e CLIENTES.TXT <strong>)
+<strong><br>C Clientes Convênio
+<br>L Clientes Loja
+<br>A Ambos
+<br>N Nenhum</strong></p>
+  <p><strong>Observação 6 - </strong>Informa ao PDV que este produto tem preço variável
+    <strong><br>S Será solicitado ao operador o preço unitário do produto
+<br>N Não será solicitado o preço ( utiliza do cadastro )
+<br>T Será solicitado ao operador o valor total do produto</strong></p>
+  <p><strong>Observação 7 - </strong>nforma ao PDV que este produto não aceita a tecla <strong>“X”</strong>, ou seja, caso no ato da venda exista mais que 1(uma) unidade do produto, o operador deverá digitar ou passar pelo leitor <strong>“X”</strong> vezes
+    o código do produto.</p>
+  <p><strong>Observação 8 - </strong>Informa ao PDV que toda venda em múltiplos de <strong>“X”</strong> (Quantidade) terá <strong>“X-Y”</strong> (Quantidade) de desconto. Deixar em branco caso não utilizado Exemplo:
+    <br>Leve <strong>3</strong> Pague <strong>2</strong> - X=3 - Y=2 - Preencher: <strong>003002</strong>
+    <br>Leve <strong>5</strong> Pague <strong>3</strong> - X=5 - Y=3 - Preencher: <strong>005003</strong></p>
+  <p><strong>Observação 9 - </strong>Este campo deverá ser preenchido com o código da tributação fiscal que por sua vez deverá estar no <strong>CADASTRO DE TRIBUTAÇÃO no MÓDULO CONCENTRADOR.</strong></p>
+  <p><strong>Observação 10 - </strong>Este campo é usado apenas pelo <strong>MÓDULO DE VENDAS BALCÃO</strong> Informa ao Balcão a quantidade por embalagem.</p>
+  <p><strong>Observação 11 - </strong>Este campo é usado apenas pelo <strong>MÓDULO DE VENDAS BALCÃO.</strong> Este campo deverá ser preenchido com a letra <strong>“S”</strong> quando o produto só puder ser vendido em embalagem fechada, ou seja, se no campo
+    <strong>Quantidade por Embalagem</strong> estiver preenchido com a quantidade <strong>2,50</strong> esse item só poderá ser vendido em múltiplos desse valor.</p>
+  <p><strong>Observação 12 - </strong>Este campo é usado apenas pelo <strong>MÓDULO DE VENDAS BALCÃO.</strong>
+    <br>Este campo deverá ser preenchido com um percentual de desconto por embalagem fechada. Exemplo:
+    <br>Se um determinado produto com embalagem de 2,50, configurado para venda não somente em embalagem fechada e com desconto de 10%.
+    <br>Quantidade: <strong>4</strong> Preço Unitário: <strong>$ 5,00.</strong>
+    <br><strong>( ( 2,5 x 5,00 ) – 10% ) + ( 1,5 x 5,00 ) = 18,75</strong></p>
+  <p><strong>Observação 13 - </strong>Solicitar descrição complementar:
+    <br><strong>N - Não Solicitar
+    <br>S - Solicitar apenas no MÓDULO DE VENDAS BALCÃO
+    <br>P - Solicitar apenas no FRENTE DE LOJA
+    <br>T - Solicitar em ambos</strong></p>
+  <p><strong>Observação 14 - </strong>Informa ao PDV que esse produto só pode ser vendido em quantidades Inteiras. Ou seja, <strong>1 ou 10</strong> nunca <strong>1,25 ou 10,251.</strong></p>
+  <p><strong>Observação 15 - </strong>Se o controle de vasilhame estiver ativo na configuração do concentrador, será solicitado ao operador o número do cupom de vasilhame.</p>
+  <p><strong>Observação 16 - </strong>Este campo é usado apenas pelo <strong>MÓDULO DE VENDAS BALCÃO</strong>. Informa ao Balcão o desconto máximo permitido na venda do produto.</p>
+  <p><strong>Observação 17 - </strong>Informa ao <strong>MÓDULO DE VENDAS BALCÃO e ao  PDV</strong>  que  esse  produto deverá utilizar este preço caso a quantidade comprada seja maior ou igual a essa quantidade mínima.</p>
+  <p><strong>Observação 18 - </strong>Quando o recurso do <strong>CLUBE FIDELIDADE</strong> estiver ativo na configuração do concentrador, existe uma pontuação e uma base de cálculo padrão que deverá ser configurada. Independente desta configuração padrão, existe a possibilidade de se ter pontuações diferenciadas por produto.
+  <br><strong>-999.9999 - PRODUTO SEM PONTUAÇÃO
+  <br>EM BRANCO - UTILIZAR PONTUAÇÃO PADRÃO
+  <br>VALOR > 0 - UTILIZAR PONTUAÇÃO DO PRODUTO</strong></p>
+  <p><strong>Observação 19 - </strong>Base de cálculo da pontuação do clube fidelidade
+  <br><strong>EM BRANCO - UTILIZAR BASE DE CÁLCULO PADRÃO
+  <br>V - ( Pontos do Produto x Valor Total Líquido Item )
+  <br>Q - ( Pontos do Produto x Quantidade de Itens )</strong></p>
+  <p><strong>Observação 20 - </strong>Informa ao <strong>PDV</strong> que esse produto deverá ser processado (vendido) junto com este item.</p>
+  <p><strong>Observação 21 - </strong>Informa ao <strong>PDV</strong> que esse produto pode ser recebido pela <strong>Modalidade de Pagamento (Finalizador)</strong> que faz parte desse grupo. Para que esse recurso funcione corretamente é necessário o grupo estar definido no <strong>Cadastro de Modalidade de Pagamento (Finalizador)</strong> e estar configurado no finalizador que o mesmo só poderá ser usado para produtos que fazem parte do grupo.
+  </p>
+  <p><strong>Observação 22 - </strong>Este campo deverá ser preenchido com o valor de desconto sobre o preço de venda, caso o produto seja recebido pela ><strong>Modalidade de Pagamento (Finalizador)</strong> definida no campo <strong>Finalizadores para Desconto.</strong>
+    Caso esse recurso não seja utilizado deixar este campo em branco. (Valor Zero).</p>
+  <p><strong>Observação 23 - </strong>O campo deverá conter os finalizadores de venda que o cliente deverá utilizar,  para ter direito ao desconto, alinhado em 3 dígitos completados com zeros a esquerda caso necessário: Exemplo:
+    Bloquear os finalizadores:
+    <br>1, 2, 10, 15, 110, 200 Conteúdo do campo:
+    <br><strong>001</strong>002<strong>010</strong>015<strong>110</strong>200
+    Caso esse recurso não seja utilizado deixar este campo em branco.</p>
+  <p><strong>Observação 24 - </strong>Este campo é usado pelo <strong>MÓDULO DE VENDAS BALCÃO e MÓDULO SERVIDOR DE MICROTERMINAIS.</strong>
+    Este campo deverá ser preenchido com o número do micro-terminal de impressão quando houver a necessidade da emissão de um pedido/comanda para o produto.
+    Exemplo: num restaurante ao digitar um produto da cozinha, emitir um pedido/comanda no micro-terminal na cozinha.</p>
+  <p><strong>Observação 25 - </strong>Informa ao PDV para emitir um cupom vinculado associado a este item.
+    <strong>EM BRANCO - Não emitir
+    1 - Cupom para Retirada
+    2 - Cupom de Entrega</strong></p>
+  <p><strong>Observação 26 - </strong>Instrução para bloqueio da venda do produto caso não haja saldo disponível.
+    <strong>N - Não Bloquear
+    S - Bloquear apenas no MÓDULO DE VENDAS BALCÃO</strong></p>
+  <p><strong>Observação 27 - </strong>Informa ao PDV que este produto é pesável ou tem quantidade variável.
+  <br><strong>S - Será solicitado ao operador a quantidade ou peso
+  <br>N - Não será solicitado a quantidade ou peso
+  <br>E - Bloqueia a digitação da quantidade ou peso</strong></p>
+  <p><strong>Observação 28 - </strong>Este campo é usado apenas pelo <strong>MÓDULO DE VENDAS BALCÃO</strong>. Informa ao Balcão para não aceitar produtos de grupos diferentes no mesmo pedido/comanda.</p>
+  <p><strong>Observação 29 - </strong>Este campo é usado apenas para definir o tipo do produto baseado nas informações:
+  <br>000 - Mercadoria Para Revenda
+  <br>001 - Matéria-Prima
+  <br>2 - Embalagem
+  <br>3 - Produto em Processo
+  <br>004 - Produto Acabado
+  <br>005 - Subproduto
+  <br>6 - Produto Intermedi rio
+  <br>7 - Material de Uso e Consumo
+  <br>008 - Ativo Imobilizado
+  <br>9 - Serviços
+  <br>10 - Outros Insumos
+  <br>099 - Outras</p>
+  <p><strong>Observação 30 - </strong>Informar a Carga Tributária  Estadual e Federal  do produto para que o PDV  possa calcular e destacar a informação na mensagem cortesia.
+  <br>Exemplo 1 – Carga Tributária de 7,35%	- Preencher: <strong>0735</strong>
+  <br>Exemplo 2 – Carga Tributária de 21,72%	- Preencher: <strong>2172</strong></p>
+  <p><strong>Observação 31 - </strong>Informar a neste campo se o produto será ou não impresso  no Cupom  de  Entrega quando este estiver configurado no PDV. Como padrão só não irá imprimir o item caso o valor seja = N</p>
+  <p><strong>Observação 32 - </strong>Deverá ser salvo sem máscara.</p>
+  <p><strong>Observação 33 - </strong>Enviar a informação da loja ao qual o produto faz parte. No arquivo  ESTOQUE.TXT essa informação também precisa ser gerada para manter a compatibilidade do arquivo, mais essa informação nesse caso será desconsiderada na gravação.</p>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>GZ Sistemas - Contratar</title>
+
+    <meta name="keywords" content="GZ Sistemas" />
+    <meta name="description" content="GZ Sistemas - Soluções para o varejo!">
+    <meta name="author" content="GZ Sistemas Automação Comercial">
+    <!-- Favicon GZ -->
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="shortcut icon" type="img/favicon.ico" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <!-- Web Fonts  -->
+    
+    <script type="text/javascript" src="resources/js/util.js"></script>
+    <script type="text/javascript" src="resources/js/empresa.js"></script>
+    <script src="resources/js/mask.js"></script>
+    <link rel="stylesheet" href="resources/css/footer.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="resources/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/vendor/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="resources/vendor/animate/animate.min.css">
+        <link rel="stylesheet" href="resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
+        <link rel="stylesheet" href="resources/vendor/owl.carousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="resources/vendor/magnific-popup/magnific-popup.min.css">
+    
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="resources/css/theme.css">
+        <link rel="stylesheet" href="resources/css/theme-elements.css">
+    
+        <!-- Current Page CSS -->
+        <link rel="stylesheet" href="resources/vendor/rs-plugin/css/settings.css">
+        <link rel="stylesheet" href="resources/vendor/rs-plugin/css/layers.css">
+        <link rel="stylesheet" href="resources/vendor/rs-plugin/css/navigation.css">
+
+        <!-- Theme Custom CSS -->
+        <link rel="stylesheet" href="resources/css/custom.css">
+    
+        <!-- Head Libs -->
+        <script src="resources/vendor/modernizr/modernizr.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#rodape").load("footer.html");
+        });
+
+        function mascara(t, mask) {
+            var i = t.value.length;
+            var saida = mask.substring(1, 0);
+            var texto = mask.substring(i)
+            if (texto.substring(0, 1) != saida) {
+                t.value += texto.substring(0, 1);
+            }
+        }
+        /* Máscaras ER */
+        function mascaratel(o, f) {
+            v_obj = o
+            v_fun = f
+            setTimeout("execmascara()", 1)
+        }
+
+        function execmascara() {
+            v_obj.value = v_fun(v_obj.value)
+        }
+
+        function mtel(v) {
+            v = v.replace(/\D/g, ""); //Remove tudo o que não é dígito
+            v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+            v = v.replace(/(\d)(\d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+            return v;
+        }
+
+        function id(el) {
+            return document.getElementById(el);
+        }
+        window.onload = function () {
+            id('telefone').onkeypress = function () {
+                mascaratel(this, mtel);
+            }
+        }
+    </script>
+    <style>
+        .loader {
+          border: 8px solid #f3f3f3; /* Light grey */
+          border-top: 8px solid #014563; /* Blue */
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          animation: spin 2s linear infinite;
+          position: inline;
+          left: 50%;
+          top: 50%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        .div-ajax-carregamento-pagina{
+                display: none;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                /* transparência compatível com os navegadores comuns.*/
+                opacity: 0.4;
+                -moz-opacity: 0.4;
+                filter: alpha(opacity=0.4);
+                background: black;
+                text-align: center;
+        }
+
+        #rodape {
+            margin-top: 900px;
+            font-size: 16px;
+        }
+
+        @media (max-width:992px) {
+            #rodape {
+                margin-top: 100px;
+            }
+            .titulos {
+                margin-top: 35px;
+            }
+        }
+
+        body {
+            font-size: 16px;
+        }
+        .modal {
+          text-align: center;
+        }
+
+        @media screen and (min-width: 768px) { 
+          .modal:before {
+            display: inline-block;
+            vertical-align: middle;
+            content: " ";
+            height: 100%;
+          }
+        }
+
+        .modal-dialog {
+          display: inline-block;
+          text-align: left;
+          vertical-align: middle;
+        }
+
+        .a[disabled="disabled"] {
+        pointer-events: none;
+        }
+</style>
+
+</head>
+
+<body class="focusedform">
+    
+     <div class="modal" id="myModal">
+        <div class="modal-dialog">
+           <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Aviso do sistema</h4>
+              </div>
+              <div class="modal-body">
+                <p>Por favor aguarde, estamos preprando seu ambiente, esse processo pode levar alguns minutos para ser concluído.</p>
+              </div>
+              <div class="modal-footer">
+                <div class="loader"></div>
+              </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="div-ajax-carregamento-pagina">
+    </div>
+    <br><br><br>
+    <center>
+      <img src="resources/img/logo-1-vemcomagente.png" class="brand1" style="width: 50%;"/>
+    </center>
+    <br><br><br><br><br><br><br><br>
+    <!--
+        <h2 class="titulo1">Seja Bem Vindo! </h2>
+        <img src="resources/img/server.png" id="logo_gzcloud">
+        <h2 class="titulo2">Sua retaguarda GZ Cloud está quase pronta! </h2>
+    -->
+    <div class="container">
+        <div class="stepwizard">
+            <div class="stepwizard-row setup-panel">
+                <div class="stepwizard-step">
+                    <a href="#step-1" type="button" style="background-color: green" class="btn btn-primary"><i class="fas fa-angle-right"></i></a>
+                    <p></p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-2" type="button" class="btn btn-default " style="background-color: green" disabled="disabled"><i class="fas fa-angle-double-right"></i></a>
+                    <p></p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-3" type="button" class="btn btn-default " style="background-color: green" disabled="disabled"><i class="fas fa-angle-double-right"></i></a>
+                    <p></p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-4" type="button" class="btn btn-default " style="background-color:green" disabled="disabled"><i class="fas fa-check-circle"></i></a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <form method="POST" action="." name="form" id="form">
+            <!--passo1-->
+            <div class="setup-content" id="step-1">
+                    <div class="col-md-12">
+                        <h3></h3>
+                        <div class="form-group">
+                            <label class="control-label"></label>
+                            <input autocomplete="off" minlength="2" maxlength="100" name="nome" id="nome" type="text" required="required" class="form-control" placeholder="NOME COMPLETO"
+                            style="width: 100%;" />
+                        </div>
+                        <button class="btn btn-secondary nextBtn btn-sm pull-right" type="button" onclick="validar1()">AVANÇAR</button>
+                    </div>
+                
+            </div>
+            <!--passo2-->
+            <div class="setup-content" id="step-2">
+                <div class="col-md-12">
+                    <h3></h3>
+                    <div class="form-group">
+                            <label class="control-label"></label>
+                            <input id="email" type="email" maxlength="150" class="form-control" placeholder="usuario@empresa.com.br" name="email"  required="required" onblur="validacaoEmail(email)"
+                                autocomplete="off" />
+            
+                            <label class="control-label"></label>
+                            <input type="password" id="senha"  class="form-control" placeholder="SENHA" name="senha" minlength="8" maxlength="32" autocomplete="off" required="required" />
+         
+                            <label class="control-label"></label>
+                            <input type="password" id="confirmasenha"  class="form-control" placeholder="CONFIRME A SENHA" name="confirmasenha" minlength="8" maxlength="32" autocomplete="off" required="required" />
+                    </div>
+                    <button class="btn btn-default prevBtn btn-sm pull-left" id="prevBtn" onclick="nextPrev(-1)" type="button">VOLTAR</button>
+                        <button class="btn btn-secondary nextBtn btn-sm pull-right" id="nextBtn" onclick="validar2()" type="button">AVANÇAR</button>
+                   
+                </div>
+            </div>
+            <!--passo3-->
+            <div class="setup-content" id="step-3">
+                <div class="col-md-12">
+                    <h3></h3>
+                    <div class="form-group">
+            
+                            <label class="control-label"></label>
+                            <input type="text" autocomplete="off" id="cpf_cnpj" name="cpf_cnpj" placeholder="CNPJ/CPF" maxlength="18" required="required"
+                                class="form-control" onkeydown="javascript:return aplica_mascara_cpfcnpj(this,18,event)" onkeyup="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
+                            />
+                          
+                            <label class="control-label"></label>
+                            <input  id="cep" required="required" name="cep" autocomplete="off" type="text" value="" size="10" maxlength="9" onkeypress="mascara(this, '#####-###')"
+                                onblur="pesquisacep(this.value);" class="form-control" placeholder="CEP" />
+                            
+                            <label class="control-label"></label>
+                            <input type="text" autocomplete="off" name="nomeFantasia" id="nomeFantasia" placeholder="NOME DA EMPRESA" maxlength="60" class="form-control" required="required" />
+                       
+                            <label class="control-label"></label>
+                            <input type="text" autocomplete="off" name="razaoSocial" id="razaoSocial" placeholder="RAZÃO SOCIAL" maxlength="60" class="form-control" required="required" />
+                            
+                        
+                    </div>
+                    <button class="btn btn-default prevBtn btn-sm pull-left" id="prevBtn" onclick="nextPrev(-1)" type="button">VOLTAR</button>
+                    <button class="btn btn-secondary nextBtn btn-sm pull-right" id="nextBtn" onclick="validar3()" type="button">AVANÇAR</button>
+                </div>
+            </div>
+            <!--passo4-->
+            <div class="setup-content" id="step-4">
+               
+                    <div class="col-md-12">
+                        <h3></h3>
+                        <div class="form-group">
+                                <label class="control-label"></label>
+                                <input name="rua" autocomplete="off" type="text" id="logradouro" maxlength="60" size="60" class="form-control" placeholder="LOGRADOURO" />
+    
+                                <label class="control-label"></label>
+                                <input type="text" autocomplete="off" name="numero" required="required" id="num" size="5" maxlength="5" class="form-control" placeholder="Nº" />
+                                
+                                <label class="control-label"></label>
+                                <input name="bairro" autocomplete="off" type="text" id="bairro" maxlength="60" class="form-control" placeholder="BAIRRO" />
+                            
+                                <label class="control-label"></label>
+                                <input name="cidade" autocomplete="off" type="text" id="municipio" size="40" class="form-control" placeholder="CIDADE" />
+                                
+                                <label class="control-label"></label>
+                                <input name="uf" autocomplete="off" type="text" id="uf" size="2" class="form-control" placeholder="ESTADO" />
+                            
+                                <label class="control-label"></label>
+                                <input type="text" autocomplete="off" name="complemento" id="complemento" size="20" class="form-control" placeholder="COMPLEMENTO"/>
+                                
+                                <label class="control-label"></label>
+                                <input type="text" autocomplete="off" name="telefone" id="telefone"maxlength="15" class="form-control" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" placeholder="(00) 00000-0000"/>
+                                <script type="text/javascript">
+                                    $("#telefone").mask("(00) 0000-00009");
+                                </script>
+                                
+                           
+                        </div>
+                       
+                            <button id="btn-criar" type="button" class="btn btn-success" style="width:100%" onclick="this.disabled = true; callApi()">CRIAR RETAGUARDA!</button>
+                    
+                       
+                    </div>
+              
+            </div>
+        </form>
+    </div>
+    <hr>
+    <footer id="footer">
+        <div class="container">
+           
+            <div class="row py-5 my-4">
+                <div class="col-md-6 mb-4 mb-lg-0">
+                   
+                    <p class="mt-2 mb-2">No mercado desde 1988, somos pioneiros em automação comercial no Brasil. Nosso trabalho é baseado em pesquisa e desenvolvimento de novas soluções em Software e Hardware que atendam as necessidades do comércio varejista.
+                    </p>
+                    <!--
+                        <p class="mb-0"><a href="#" class="btn-flat btn-xs text-color-light"><strong class="text-2">VEJA MAIS</strong><i class="fas fa-angle-right p-relative top-1 pl-2"></i></a></p>
+                        -->
+
+                </div>
+                <div class="col-md-6">
+                
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list list-icons list-icons-lg">
+                                <li class="mb-1"><i class="fa fa-map-marker text-color-primary"></i>
+                                    <p class="m-0">Rua Marechal D. da Fonceca, 736 Centro - Jundiaí - SP</p>
+                                </li>
+                                <li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i>
+                                    <p class="m-0"><a href="tel:1133088199">(11) 3308-8199</a></p>
+                                </li>
+                                <li class="mb-1"><i class="far fa-envelope text-color-primary"></i>
+                                    <p class="m-0"><a href="mailto:contato@gzsistemas.com.br">contato@gzsistemas.com.br</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list list-icons list-icons-sm">
+                                <li><i class="fas fa-angle-right"></i><a href="https://blog.gzsistemas.com.br" class="link-hover-style-1 ml-1" target="_blank"> Blog da GZ</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="https://login.gzcloud.com.br/login.jsf" class="link-hover-style-1 ml-1" target="_blank"> Login</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="https://painel.gzcloud.com.br/" class="link-hover-style-1 ml-1" target="_blank"> Painel</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="https://login.gzcloud.com.br/cotacao/" class="link-hover-style-1 ml-1" target="_blank"> Cotação OnLine</a></li>
+
+                                <li><i class="fas fa-angle-right"></i><a href="http://api.gzcloud.com.br/" class="link-hover-style-1 ml-1" target="_blank"> API Integrações</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="https://gzsistemas.tomticket.com/chat/?id=EP12069&ac=772416P16082016015237" class="link-hover-style-1 ml-1" title="Atendimento OnLine" target="_blank"> Suporte</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="revendas.php" class="link-hover-style-1 ml-1"> Revendas</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="trabalheConosco.php" target="_blank" title="Entre em contato através do Linkedin" class="link-hover-style-1 ml-1"> Trabalhe Conosco</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="termos.html" target="_blank" class="link-hover-style-1 ml-1"> Termos de Uso</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright footer-copyright-style-2">
+            <div class="container py-2">
+                <div class="row py-4">
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <p>© Copyright 2021. GZ Sistemas - Soluções para o Varejo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!---//End-bottom-footer-grids---->
+    </div>
+
+    <!-- Google Analitics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-90361141-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- Fim  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Chamada dos js's que realizam fun��es dentro da p�gina -->
+    <script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="resources/js/enquire.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="resources/js/ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="resources/plugins/codeprettifier/prettify.js"></script>
+    <script type="text/javascript" src="resources/plugins/form-toggle/toggle.min.js"></script>
+    <script type="text/javascript" src="resources/plugins/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="resources/plugins/bootbox/bootbox.min.js"></script>
+    <!--<script type='text/javascript' src="js/jquery.toast.js"></script>-->
+    <script type="text/javascript" src="resources/js/form.js"></script>
+    <script type="text/javascript" src="resources/js/validator.js"></script>
+    <script type="text/javascript" src="resources/js/empresa.js"></script>
+    <script type="text/javascript" src="resources/js/chamada.js"></script>
+    <script type="text/javascript" src="resources/js/cep.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,511 @@
+/*############################################# Layout PadrÃ£o #*/
+/*-------------------------definiÃ§Ãµes gerais*/
+
+a{
+    cursor: pointer;
+}
+root { 
+    display: block;
+}
+img{
+    border-width: 0px;
+    vertical-align: middle;
+}
+
+.links{
+    color: #53575c;
+    width:90px;
+    line-height: 32px;
+    height: 100%;
+}
+* {
+    margin:0;
+    padding:0;
+    margin-bottom: 0px;
+}
+/*-------------------------definindo o body*/
+body{
+    background: url("../images/fundo.jpg");
+    background-repeat: repeat-x;
+    background-color:#e5eaf0;
+    font-family: arial;
+    font-size: 12px;
+}
+/*-------------------------definindo o body2*/
+#body2{
+    background-image: none;
+    background-color:#e5eaf0;
+    font-family: arial;
+    font-size: 12px;
+    margin-left: 14px;
+}
+
+/*-------------------------definindo o index*/
+#index{
+    display: block;
+    width:900px;
+    padding: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #000000;
+    height: auto;
+}
+/*-------------------------definindo o banner*/
+#banner{
+    display: block;
+    line-height: 173px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+/*-------------------------definindo o corpo*/
+#corpo{
+    position: relative;
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-top: 32px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #d6d6d6;
+    height: auto;
+}
+/*-------------------------definindo o rodapé*/
+#rodape{
+    display: block;
+    margin-top: auto;
+    line-height: 20px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #000000;
+    margin-bottom: 0px;
+    font-size: 8pt;
+    font-family: verdana;
+    color: #437a9a;
+    text-align: center;
+    clear: left;
+}
+#rodape a{
+    text-decoration: none;
+    font-size: 8pt;
+    font-family: verdana;
+    color: #437a9a;
+}
+p{
+    float: left;
+}
+/*############################################# Index #*/
+.div_box{
+    position: relative;
+    border-width: 2px;
+    padding-left: 3px;
+    border-left-width: 10px;
+    border-top-width: 2px;
+    border-style: solid;
+    border-color: #f1f1f1;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-top: 2px;
+    color: #cccccc;
+    cursor: pointer;
+}
+.div_box:hover {
+    border-color:#e8eae8;
+    color: #000000;
+}
+
+#w3c{
+    position: relative;
+    float: left;
+    clear: left;
+    bottom: 0px;
+}
+/*############################################# Intranet #*/
+#box_login{
+    font-family: verdana;
+    font-size: 10px;
+    padding: 4px;
+    border: 1px;
+    border-color:#e8eae8;
+    border-style: solid;
+    width: 500px;
+    margin: auto;
+    text-align: left;
+    background: url("../images/lock.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+input
+{
+    background-color: #ececec;
+    font-family: arial;
+    font-size: 10pt;
+    color: #000000;
+    border-style:groove;
+}
+input.checkbox{
+    background-color: #ececec;
+    font-family: arial;
+    font-size: 10pt;
+    color: #000000;
+    border-style:groove;
+}
+select
+{
+    background-color: #ececec;
+    font-family: arial;
+    font-size: 10pt;
+    color: #000000;
+    border-style:groove;
+}
+
+.user{
+    float: right;
+    text-align: center;
+    color:#fff;
+
+}
+/* portal/intranet/senhas/relatorio.php */
+#senhas_relatorio{
+    border: 1px solid #aeaeae;
+    width: 420px;
+    line-height: 180%;
+    display: inline-block;
+}
+.ttl_form{
+    width: 90px;
+    display:inline-block;
+}
+.header_form{
+    background: url("../images/fundo_indice1.png");
+    height:22px;
+    width: 100%;
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: -5px;
+}
+.form_geral{
+    padding: 5px;
+}
+#img_gz{
+    display: inline-block;
+    text-align: center;
+    float: right;
+    border: 0px solid black;
+}
+#senhas_ttl_lista{
+    margin-top: 5px;
+    background: url("../images/fundo_indice1.png");
+    line-height: 22px;
+    height:22px;
+    font-family: arial;
+    font-size: 8pt;
+    color:#fff;
+    font-weight: bold;
+    border: 1px solid #AEAEAE;
+    border-bottom-width: 0px;
+}
+#senhas_lista{
+    line-height: 22px;
+    color:#000;
+    font-family: arial;
+    font-size: 8pt;
+    border: 1px solid #c6c6c6;
+    border-top-width: 0px;
+    float:left;
+    background: url("../images/fundo_indice4.png");
+}
+.senhas_ttl_tp1{
+    width:42px;
+    float: left;
+}
+.senhas_ttl_tp2{
+    width: 460px;
+    float: left;
+}
+.senhas_ttl_tp3{
+    width:90px;
+    float: left;
+}
+.senhas_ttl_tp4{
+    width:22px;
+    float: left;
+    background: url("../images/fundo_indice3.png");
+}
+.senhas_tp1{
+    width:42px;
+    float: left;
+}
+.senhas_tp2{
+    width:465px;
+    float: left;
+}
+.senhas_tp3{
+    width:90px;
+    float: left;
+}
+
+.senhas_tp4{
+    float:left;
+    width: 85px;
+}
+
+.perm2{
+    position:relative;
+    float:left;
+ 
+
+}
+
+.perm3{
+    clear:left;
+    float:left;
+    display:inline-block;
+    width:42px
+}
+
+/* -- */
+#fundo{
+    display:block;
+    border: 2px solid black;
+}
+
+
+#banner2{
+    position: relative;
+    height:180px;
+    width:880px;
+    font-size: 25px;
+    text-align: center;
+    background-color:gray;
+}
+
+#meses{
+    position: relative;
+    height:80px;
+    width:880px;
+    font-size: 25px;
+    padding:5px;
+}
+
+#mes{
+    text-align: center;
+    margin: 1px;
+    line-height: 40px;
+    display: inline-block;
+    color: #fff;
+    height:40px;
+    width:140px;
+    position:relative;
+    font-size:12px;
+    font-family: verdana;
+    font-weight: bold;
+    float:left;
+    border: 2px solid #5b665d;
+    vertical-align: middle;
+    background: url("../images/fnd_mes.jpg");
+}
+#mes a:hover{
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    color: #5b665d;
+    background-color: #e8eae8;
+    height:40px;
+    width:140px;
+    position:relative;
+    font-size:12px;
+    font-family: verdana;
+    font-weight: bold;
+    float:left;
+    vertical-align: middle;
+}
+#mes a{
+    color: #fff;
+    float:left;
+    height:40px;
+    width:140px;
+    line-height: 40px;
+}
+/*Formatação dos Menus*/
+#jsddm
+{
+    margin: 0;
+    padding: 0;
+
+}
+#jsddm li
+{
+    float: left;
+    list-style: none;
+    font: 10px Verdana;
+    color: #fff;
+    line-height: 32px;
+}
+#jsddm li a
+{
+    display: block;
+    text-decoration: none;
+    width: 90px;
+    font: 8pt Verdana;
+    color: #fff;
+    white-space: nowrap;
+    line-height: 32px;
+    vertical-align: middle;
+}
+#jsddm li a:hover
+{	
+    background:  #99bde1;
+}
+#jsddm li ul
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    visibility: hidden;
+    border: 1px solid #5b665d;
+    border-top: 0px;
+    z-index: 1;
+}
+
+#jsddm li ul li
+{
+    float: none;
+    display: inline
+}
+#jsddm li ul li a
+{
+    width: 84px;
+    background-color: #6898C6;
+    color: #fff;
+    line-height: 32px;
+    z-index: 99;
+    padding-left: 5px;
+    border-bottom: 1px solid #6D9BCC;
+}
+#jsddm li ul li a:hover
+{	
+    background:  #99bde1;
+}
+#menu{
+    line-height: 32px;
+}
+#menu a{
+    font-weight: bold;
+    color: #fff;
+}
+/*Página de Testes*/
+#ttl_testes{
+    border: 1px solid #AEAEAE;
+    background: url("../images/fundo_indice1.png");
+    clear: left;
+    width: 875px;
+    line-height: 22px;
+    margin-top: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-family: verdana;
+    padding-left: 3px;
+}
+#ttl_testes a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: verdana;
+    padding-left: 3px;
+    float: left;
+    width: 875px;
+}
+#lst_teste{
+    clear: left;
+    font-family: verdana;
+    color:#5d665b;
+    font-size: 12px;
+    line-height: 33px;
+    height: 33px;
+    background: url("../images/fundo_indice.png");
+    width: 873px;
+    border: 1px solid #AEAEAE;
+    border-top: 0px;
+    vertical-align: top;
+    padding-left: 5px;
+}
+#lst_teste1{
+    clear: left;
+    font-family: verdana;
+    color:#5d665b;
+    font-size: 10px;
+    line-height: 22px;
+    height: 22px;
+    background: url("../images/fundo_indice.png");
+    width: 863px;
+    border: 1px solid #AEAEAE;
+    border-top: 0px;
+    padding-left: 15px;
+}
+#lst_teste2{
+    clear: left;
+    font-family: verdana;
+    color:#5d665b;
+    font-size: 12px;
+    line-height: 22px;
+    height: 22px;
+    background: url("../images/fundo_indice.png");
+    width: 876px;
+    border: 1px solid #aeaeae;
+    padding-left: 2px;
+    font-weight: bold;
+    color:#5b665d;
+}
+#lst_teste a{
+    border: 0px solid #AEAEAE;
+    float: left;
+    font-family: verdana;
+    color:#5d665b;
+    font-size: 12px;
+    text-decoration: none;
+    width: 878px;
+    vertical-align: middle;
+}
+#infos_testes{
+    border: 0px solid black;
+    float: right;
+    background: url("../images/fundo_indice5.png");
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#infos_testes a{
+    text-decoration: none;
+    width:auto;
+}
+
+.seta_p_ok{
+    cursor: default;
+}
+
+#status_testes{
+    float:left;
+}
+#box_prova1, #box_prova2, #box_prova3, #box_prova4 {
+    width: 878px;
+    line-height: 33px;
+}
+.questoes{
+    float: right;
+}
+
+/*Página de Relatórios*/
+
+#definir_niveis{
+    position:absolute;
+    top:15px;
+    left:800px;
+}

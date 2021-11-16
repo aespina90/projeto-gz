@@ -1,0 +1,1 @@
+<a href="javascript:abrir('definir_niveis.php')">Gerênciar</a>

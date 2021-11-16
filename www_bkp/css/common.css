@@ -1,0 +1,7 @@
+tr td .botao-alterar{
+	display: none;
+	width: 100%;
+}
+tr:hover .botao-alterar{
+	display: inline;
+}

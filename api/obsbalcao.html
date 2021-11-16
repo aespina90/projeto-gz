@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- Personal Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<p><strong>Observação 1 - </strong>Após a solicitação do pedido pela frente de loja, será feito uma checagem no mesmo. Caso haja algum problema com algum dos itens, o pedido não será processado pela frente de loja.</p>
+<p><strong>Observação 2 - </strong>Para conceder abatimento/desconto no total do  pedido,  coloque  no  campo <strong>Código do Produto (PLU)</strong> a mensagem <strong>ABATIMENTO</strong> e no campo <strong>Preço Unitário do Item o VALOR DO ABATIMENTO</strong>, o restante dos campos preencher normalmente.</p>
+<p><strong>Observação 3 - </strong>Para conceder acréscimo no total do pedido, coloque no campo <strong>Código  do Produto (PLU)</strong> a mensagem <strong>ACRESCIMO</strong> e no campo <strong>Preço Unitário do Item o VALOR DO ACRESCIMO</strong>, o restante dos campos preencher normalmente.</p>
+<p><strong>Observação 4 - </strong>Para gerar o arquivo usar o seguinte padrão para nome do arquivo:
+<br><strong>pppppppp.txt</strong> ( Onde <strong>pppppppp</strong> é o numero do pedido ).
+<br>Exemplos: <strong>1.txt, 25.txt, 125.txt, etc...</strong> Lembrando que o arquivo será apagado após o processamento dos itens do pedido.</p>
+<p><strong>Observação 5 - </strong>O <strong>Código da Modalidade de Pagamento (Finalizador)</strong> é opcional. Caso seja informado, o frente de loja somente aceitará esse finalizador no encerramento do cupom.</p>
+<p><strong>Observação 6 - </strong>A <strong>Observação  para  cupom  fiscal</strong>  deverá ser preenchida no formato 5 linhas por 48 caracteres totalizando os 240 dígitos disponíveis. Lembrando que para as impressoras fiscais que possuem espaçamento inferior ou superior a 48 caracteres, a observação será truncada ou preenchida ao tamanho máximo permitido pela impressora.</p>
+<p><strong>Observação 7 - </strong>Os campos <strong>Desconto Total do Item e Acréscimo Total do Item</strong> deveram ser utilizados para conceder desconto ou acréscimo no item. Esse valor deve ser menor que o valor total do item, caso o contrário o mesmo será ignorado pelo frente de loja.
+</p>
+<p><strong>Observação 8 - </strong>Após o processamento da venda, será gerado um arquivo de retorno com as informações do cupom, conforme layout abaixo. O arquivo de retorno terá o mesmo nome e extensão do arquivo gerado. O arquivo será composto por uma linha.</p>
+</body>
+</html>

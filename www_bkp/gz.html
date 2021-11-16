@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+	<title>Fale conosco</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="GZ Sistemas" />
+	<meta name="author" content="GZ Sistemas" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/social-icons.css" type="text/css" media="screen" />
+	<link rel='stylesheet' type='text/css' href='https://painel.gzcloud.com.br/www/js/ui/jquery-ui.min.css' />
+	<link rel='stylesheet' type='text/css' href='https://painel.gzcloud.com.br/www/plugins/charts-morrisjs/morris.css' />
+	<link rel='stylesheet' type='text/css' href='https://painel.gzcloud.com.br/www/plugins/codeprettifier/prettify.css' />
+	<link rel='stylesheet' type='text/css' href='https://painel.gzcloud.com.br/www/plugins/fullcalendar/fullcalendar.css' />
+	<link rel='stylesheet' type='text/css' href='https://painel.gzcloud.com.br/www/plugins/form-toggle/toggles.css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css' />
+	<link href="https://painel.gzcloud.com.br/www/plugins/toastr/toastr.min.css" rel="stylesheet" type='text/css' />
+	<script 	src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#menu").load("menu.html");
+			$("#rodape").load("footer.html");
+		});
+	</script>
+		<!-- <link href="less/styles.less" rel="stylesheet/less" media="all">  -->
+	<link rel="shortcut icon" href="img/logo1.png" type="img/favicon.ico" />
+</head>
+
+<body class="focusedform">
+<div id="menu"></div>
+
+
+
+<div id="rodape"></div>
+
+	<!-- Font Awesome Script -->
+	<script defer src="vendor/fontawesome/svg-with-js/js/fontawesome-all.js"></script>
+
+
+	<!-- Personal Script -->
+	<script defer src="js/index.js"></script>
+
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/jquery-1.10.2.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/bootstrap.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/enquire.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/jquery.cookie.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/jquery.nicescroll.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/ui/jquery-ui.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/plugins/codeprettifier/prettify.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/plugins/form-toggle/toggle.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/plugins/fullcalendar/fullcalendar.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/demo/demo-calendar.js'></script>
+	<script type="text/javascript" src='https://painel.gzcloud.com.br/www/plugins/toastr/toastr.min.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/placeholdr.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/application.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/util.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/dash.js'></script>
+	<script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/script.js'></script>
+	<script src="https://gzsistemas.tomticket.com/chat/balaofixo/EP12069/"></script>
+	<!-- FOOTER -->
+
+  <script>
+  function onEnviar() {
+    var nome = document.getElementById("nome").value;
+    var fone = document.getElementById("fone").value;
+    var email = document.getElementById("email").value;
+    var msg = document.getElementById("msg").value;
+    document.getElementById("mensagem").value =
+      "Atenção: " + nome + " entrou em contato conosco por meio do Fale conosco.<br/>" +
+      "Telefone: " + fone + "<br/>" +
+      "Email: " + email + "<br/>" +
+      "Mensagem: " + msg + "<br/>" +
+      "Entre em contato agora mesmo!";
+  }
+  </script>
+</body>
+
+</html>

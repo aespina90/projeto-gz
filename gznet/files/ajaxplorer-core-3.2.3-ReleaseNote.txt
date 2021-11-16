@@ -1,0 +1,18 @@
+Release early, release often! Nearly one week after the 3.2.2 version, here comes a new release, focused on only one new feature : access AjaXplorer repositories via the webDAV protocol. Based on a PHP implementation of webDAV, this does not require specific server configuration, takes full advantage of existing users and access rights of AjaXplorer, and make the files accessible to a wide variety of GUI client ! Mount the repositories as network drives on desktop computers, or access the files using the webdav client of your choice on the mobile phones terminals.
+
+Upgrade is not necessary if you do not plan to use this feature. But people willing to install, test and report problems, are welcome! A full HOW-TO is available in the documentation : http://www.ajaxplorer.info/wordpress/documentation-3/chapter-howtos/7-4-setup-the-webdav-server-access/
+
+[Upgrade]
+
+Only a couple of "AJXP_WEBDAV_" configurations options appear in the server/conf/conf.php file, otherwise should be totally compatible with previous version. On the config side, the is a new "slug" concept added to the repository objects, wich implies a new column for conf.sql users : simply add slug VARCHAR(255) to the ajxp_repo table.
+
+[You like it?]
+
+Please support this software by a donation. You can also hire me for specific developement on the AjaXplorer base : team (at) ajaxplorer (dot) info. Or the very minimal support would be to spread the word on Facebook, vote for AjaXplorer on Sourceforge or Freshmeat!
+
+
+
+------------------------------------------------------------------
+Licence : LGPL
+Copyright : 2008-2011 Charles du JEU
+Docs & Install infos : http://www.ajaxplorer.info/

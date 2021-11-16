@@ -1,0 +1,99 @@
+body {
+	background:            #FFF url("../icones/bg.gif") repeat-y center ;
+	font-family:           Tahoma ;
+	font-size:             11px ;
+	color:                 #000000 ;
+	margin-left:           0px ;
+	margin-right:          0px ;
+	margin-top:            0px ;
+	margin-bottom:         0px ;
+}
+a , a:active , a:visited {
+	font-family:           Tahoma ;
+	font-size:             11px ;
+	color:                 #000000 ;
+	text-decoration:       none ;
+}
+a:link {
+	font-family:           Tahoma ;
+	font-size:             11px ;
+	color:                 #000000 ;
+}
+a:hover {
+	font-family:           Tahoma ;
+	font-size:             11px ;
+	color:                 #5C97CF ;
+}
+td {
+	font-family:           Tahoma ;
+	font-size:             10pt ;
+	color:                 #000000 ;
+}
+th {
+	font-family:           Tahoma ;
+	font-size:             10pt ;
+	font-weight:           bold ;
+	color:                 #FFF ;
+	/*background-color:      #3078B5 ; */
+	background-color:      #5C97CF;
+}
+input {
+	font-family:           Tahoma ;
+	font-size:             10pt ;
+	color:                 #000000 ;
+	border-width:          1px ;
+	border-style:          solid ;
+	border-color:          #000000 ;
+	cursor:                pointer ;
+}
+select {
+	font-family:           Tahoma ;
+	font-size:             10pt ;
+	color:                 #000000 ;
+	border-width:          1px ;
+	border-style:          solid ;
+	border-color:          #000000 ;
+	cursor:                pointer ;
+}
+textarea {
+	font-family:           Tahoma ;
+	font-size:             9pt ;
+	color:                 #333333 ;
+	background-color:      #FFFFFF ;
+	border-width:          1px ;
+	border-style:          solid ;
+	border-color:          #000000 ;
+	cursor:                pointer ;
+}
+.barra_vazia {
+	font-family:           Tahoma ;
+	font-size:             1pt ;
+	color:                 #000000 ;
+	background-color:      #EFEFEF ;
+}
+.legenda {
+	font-family:           Tahoma ;
+	font-size:             7pt ;
+	color:                 #000000 ;
+}
+.legenda_2 {
+	font-family:           Tahoma ;
+	font-size:             10pt ;
+	color:                 #000000 ;
+	text-align:            center ;
+}
+.input_consultar {
+	border:                none ;
+	color:                 #000000 ;
+	background:            #FFFFFF ;
+	font:                  12px Tahoma ;
+	cursor:                default ;
+}
+
+.paginacao {
+    width:                 15px ;
+	font-family:           Tahoma ;
+    font-weight:           Bold ;
+	font-size:             8pt ;
+	background-color:      #5C97CF;
+}

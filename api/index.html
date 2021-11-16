@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="shortcut icon" href="img/logo1.png" type="img/favicon.ico" />
+  <title>Documentação de API </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GZ Sistemas" />
+  <meta name="author" content="GZ Sistemas" />
+  <link rel='stylesheet' type='text/css' href='https://painel.gzcloud.com.br/www/js/ui/jquery-ui.min.css' />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+  <!-- Personal Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Jquery Script -->
+  <script defer src="js/jquery.min.js"></script>
+
+  <!-- Personal Script -->
+  <script defer src="js/index.js"></script>
+  <script type="text/javascript">
+  </script>
+</head>
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+  require(["mojo/signup-forms/Loader"], function(L) {
+    L.start({
+      "baseUrl": "mc.us12.list-manage.com",
+      "uuid": "a917ba0deffb177dd1d0b0b62",
+      "lid": "b28dcf8cf2"
+    })
+  })
+</script>
+
+<body>
+  <div class="page-wrapper">
+
+    <header>
+      <div class="header-container">
+        <img src="http://www.imgim.com/rocket.png" alt="logo" />
+        <h1>Documentação de API</h1>
+        <p>A sua automação comercial nunca esteve tão tecnologica</p>
+      </div>
+    </header>
+    <div class=fakeMenu>
+      <div class="fakeButtons fakeClose"></div>
+      <div class="fakeButtons fakeMinimize"></div>
+      <div class="fakeButtons fakeZoom"></div>
+    </div>
+    <div class="fakeScreen">
+      <p class="line1 codline">&#91;&nbsp;&ldquo;API GZ Sistemas.&rdquo;,<span class="cursor1 codespan">_</span></p>
+      <p class="line2 codline">&nbsp;&nbsp;&ldquo;Não mude, evolua.&rdquo;,<span class="cursor2 codespan">_</span></p>
+      <p class="line3 codline">&nbsp;&nbsp;&ldquo;Faça acontecer agora!&rdquo;&nbsp;&#93;<span class="cursor3 codespan">_</span></p>
+      <p class="line4 codline">><span class="cursor4 codespan">_</span></p>
+    </div>
+  </div>
+  <br>
+  <div class="content-wrapper">
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introdução</a></li>
+        <li> <a href="#conceito">Conceitos</a></li>
+        <li> <a href="#arq">Arquitetura</a></li>
+        <li> <a href="#fluxo">Fluxo de integração</a></li>
+        <li><a href="#model">Modelo de API</a></li>
+        <li><a href="#api1">API 1.0 </a></li>
+        <li><a href="#api2">API 2.0</a></li>
+        <li><a href="#help">Ajuda</a></li>
+      </ul>
+    </nav>
+
+    <section class="section01" id="introduction">
+      <div class="section01-container">
+        <div class="section01-text">
+          <h3>Sobre</h3>
+          <p>A GZ Sistemas busca aprimorar cada dia mais suas tecnologias, de maneira a trazer para seus clientes e colaboradores maneiras de facilitar sua interação com os software com foco na evolução.</p>
+          <p>Com mais de 30 anos, atuando em territorio nacional, com uma imagem criada a partir da busca constante de evolução e melhoria</p>
+          <p>A GZ Sistemas trás mais ma melhoria para vocês, a API sem necessitar troca de software, apenas evoluindo para um ambiente mais aprimorado.</p>
+        </div>
+        <div class="section01-image">
+          <span class="image-border">
+                  <img src="img/logo1.png" alt="section01">
+                </span>
+        </div>
+      </div>
+      <div class="section01-container">
+        <div class="section01-text">
+          <h3>Visão da plataforma</h3>
+          <p>Missão: Cada momento a nossa missão pode ser alterada sendo direcionada diretamente com a da cliente, como somos uma empresa de automação comercial, porém a ideia principal de nossa missão é <strong>LEVAR A MELHOR SOLUÇÃO PARA CADA CLIENTE</strong>            </p>
+          <p>Valores: Com valores bem definidos como um bom relacionamento entre cliente e empresa, uma visão de mercado com intuito de aprimorar qualquer necessidade do cliente e também com a integridade e responsabilidade de cuidar de cada cliente.</p>
+          <p>Ideais: Com a idéia de se concentrar na efetiva melhoraria e automação de atividades sem a necessidade de mudanças bruscas, um dos ideais é a <strong>construção de maneiras para melhorar</strong> cada vez mais as funcionalidades dos softwares
+            GZ Sistemas. </p>
+        </div>
+        <div class="section01-image1">
+          <span class="image-border1">
+                  <img src="img/valores.png" alt="section01" >
+                </span>
+        </div>
+      </div>
+      <div class="section01-text">
+        <h3>Vantagem da API</h3>
+        <!--ITEM SIMPLIFICAR-->
+        <div class="section02-container">
+          <!--ITEM SIMPLIFICAR-->
+          <div class="section02-code item1">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <h4 style="font-size:40px;" class="textword">Simplificar</h4>
+            <div class="info">
+              <div class="buttons">
+                <p>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#simplificar">
+                    Saiba mais
+                  </button>
+                </p>
+              </div>
+            </div>
+            <br></br>
+            <div class="modal fade" id="simplificar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <h1 style="margin-left:100px;">Simplificar</h1>
+                    <p>Pensando no minimo esforço porém de maneira mais completa, buscamos simplificar tanto para os desenvolvedores que irão utilizar essa API quanto para os clientes que irão possuir a API GZ Sistemas. Com isso uma das vantagens para essa
+                      API é trazer a simplicidade e agilidade para qualquer desenvolvedor que possuir essa documentação</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--ITEM Melhorar-->
+          <div class="section02-files item1">
+            <i class="fa fa-arrow-up  " aria-hidden="true"></i>
+            <h4 style="font-size:40px;" class="textword">Melhorar</h4>
+            <div class="info">
+              <div class="buttons">
+                <p>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#melhorar">
+                    Saiba mais
+                  </button>
+                </p>
+              </div>
+            </div>
+            <br></br>
+            <div class="modal fade" id="melhorar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <h1 style="margin-left:100px;">Melhorar</h1>
+                    <p> O ato de melhorar é algo que qualquer empresa busca, e nós como sempre tentamos trazer a melhor tecnologia para nossos clientes, apresentamos uma maneira de melhorar sem necessitar trocas bruscas de softwares.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section02-container">
+          <!--ITEM APRIMORAR-->
+          <div class="section02-code item1">
+            <i class="fa fa-check-circle " aria-hidden="true"></i>
+            <h4 style="font-size:40px;" class="textword">Aprimorar</h4>
+            <div class="info">
+              <div class="buttons">
+                <p>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#aprimorar">
+                    Saiba mais
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="modal fade" id="aprimorar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <h1 style="margin-left:100px;">Aprimorar</h1>
+                    <p>Buscando otimizar cada funcionalidade, a aprimoração é um item essencial para qualquer sistema grande e estabelecido no mercado, pois não necessita crescer e sim aprimorar e cada aprimoração é visando facilitar a vida dos clientes.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--ITEM EVOLUIR-->
+          <div class="section02-files item1">
+            <i class="fa fa-angle-double-up  " aria-hidden="true"></i>
+            <h4 style="font-size:40px;" class="textword">Evoluir</h4>
+            <div class="info">
+              <div class="buttons">
+                <p>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#evoluir">
+                    Saiba mais
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="modal fade" id="evoluir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <h1 style="margin-left:100px;">Evoluir </h1>
+                    <p>Pensamos em como evitar qualquer mudança porém evoluir o meio de pensar e também os meios tecnológicos de qualquer futuro cliente ou clientes atuais, com isso pensamos no seguinte conceito, EVOLUÇÃO, a evolução é algo comum do ser
+                      humano, não podemos se acomodar com os mesmo conceitos, evoluir é necessário e damos a chance de evoluir com facilidade.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section02" id="conceito"> <a name="conceito"></a>
+      <div class="section02-container">
+        <div class="section02-text">
+          <h3>Conceitos</h3>
+          <div class="justificado">
+            <p>O conceito de api vem da sigla Application Programming Interface ou, em português, Interface de Programação de Aplicativos.</p>
+            <p>O objetivo dessa documentação é orientar o desenvolvedor sobre como integrar com a API GZ Sistemas, descrevendo as funcionalidades, os métodos que irão ser utilizados, listando informações.</p>
+            <p>O mecanismo de integração com a API GZ Sistemas é simples, de modo que apenas com conhecimentos intermediários em linguagens de programação JAVA </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="" id="conceito"> <a name="arq"></a>
+      <div class="section02-container">
+        <div class="section02 -text">
+          <h3 align="center">Arquitetura</h3>
+          <div class="justificado">
+            <strong>Sobre</strong>
+            <p> A GZ Sistemas consegue trazer uma tecnologia de ponta para os clientes, pensando na otimização da capacidade de cada cliente de pequeno a grande porte, para isso a recepção do desenvolvedor é simples, de maneira que não necessite ter níveis
+              avançados de conhecimento para implementar a API GZ Sistemas.</p>
+            <p>A API GZ Sistemas é baseada em arquitetura em nuvem e API REST que permite a integração com sistemas de automação comercial de parceiros.</p>
+            <br>
+            <strong>Segurança</strong>
+            <p> Com intuito de levar a melhor segurança para cada cliente, da maneira que sempre consegue, você consegue manter sua estrutura e otimizando com a API GZ Sistemas.</p>
+            <p>Tendo a segurança na gerencia de estoque, na subida de movimentos e manipulação de pedidos. <strong>Toda suas informações em segurança e eficazes</strong> </p>
+            <br>
+            <strong>Modelo de integração</strong>
+            <p>A maneira para sua integração não necessita de trocas nos seus sistemas,só irá <strong>EVOLUIR</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section02" id="conceito"> <a name="fluxo"></a>
+      <div class="section02-container">
+        <div class="section02-text">
+          <h3 align="center">Fluxo de integração</h3>
+          <img src="img/fluxo.png" class="fluxo" />
+        </div>
+      </div>
+    </section>
+    <section class="section02" id="model">
+      <h3>Modelos de Api</h3>
+      <div class="section02-container">
+        <div class="section02-code item">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <h4>Api 1.0</h4>
+          <p>Api de compatibilidade para leitura de arquivos de maneira simplificada. Com a API 1.0 da GZ Sistemas, você tem a possibilidade de leitura de arquivos simples XML's, subidas de movimentos e controle de pedido, sem necessitar de trocar em softwares que já possui. </p>
+          <br></br>
+          <a href="#learn_api1" class="conceito">Api 1.0</a>
+        </div>
+        <div class="section02-files item">
+          <i class="fa fa-users " aria-hidden="true"></i>
+          <h4>Api 2.0</h4>
+          <p>Api avançada com leitura mais detalhada de arquivos XML e JSON.  Com a API 2.0 da GZ Sistemas você tem a leitura mais detalhada e consegue ler arquivos XML's mais robustos, subidas de movimentos e controle de pedido, não tendo necessidade de fazer trocas nos softwares que já possui.</p>
+          <br></br>
+          <a href="#learn_api2" class="conceito">Api 2.0</a>
+        </div>
+      </div>
+    </section>
+    <section class="section02" id="api1"> <a name="api1"></a>
+      <h3><strong>API 1.0</strong></h3>
+      <h3>Como integrar</h3>
+      <div class="section02-container">
+        <div class="section02-code item">
+          <i class="fa fa-clipboard-list " aria-hidden="true"></i>
+          <h4>Produto</h4>
+          <p></p>
+          <br></br>
+          <a href="#product_api1" class="conceito">Entenda mais</a>
+        </div>
+        <div class="section02-files item">
+          <i class="fa fa-cloud-upload-alt " aria-hidden="true"></i>
+          <h4>Movimento</h4>
+          <p></p>
+          <br></br>
+          <a href="#move_api1" class="conceito">Entenda mais</a>
+        </div>
+        <div class="section02-diamond item">
+          <i class="fa fa-shopping-cart  " aria-hidden="true"></i>
+          <h4>Pedido</h4>
+          <p></p>
+          <br></br>
+          <a href="#order_api1" class="conceito">Entenda mais</a>
+        </div>
+      </div>
+    </section>
+    <div class="section01" id="product"><a name="product_api1"></a>
+      <div class="section01-text">
+        <h3>Produto</h3>
+        <p>Regra para geração do arquivo ESTOQUEMIX.TXT: o arquivo ESTOQUEMIX.TXT, seguirá a mesma estrutura do arquivo ESTOQUE.TXT, mais deverá ter todos os produtos juntamente com a informação da loja (campo 85 do manual e observação 33) ao qual o mesmo
+          faz parte. Sendo assim, caso um produto exista por exemplo nas lojas 1,2 e 3, as informações deverão estar nas 3 linhas do arquivo juntamente com sua devida loja.</p>
+        <p>Exemplo:
+          <br>0000000000000060262000000000095188790348SUCO TAMPICO FRUTAS CITRICAS GF 1 LT SUCO TAMPICO FRUTAS CI NUN000000
+          <br>0000000000000060262000000000095188790348SUCO TAMPICO FRUTAS CITRICAS GF 1 LT SUCO TAMPICO FRUTAS CI NUN000000
+          <br>0000000000000060262000000000095188790348SUCO TAMPICO FRUTAS CITRICAS GF 1 LT SUCO TAMPICO FRUTAS CI NUN000000</p>
+        <h3>Tabela Estoque.txt</h3>
+        <!--TABELA Estoque.txt-->
+        <div id="tabestoquetxt"></div>
+        <h3>Tabela Barrarel.txt</h3>
+        <div id="tabbarrarel"></div>
+        <h3>Observações do Estoque</h3>
+        <div id="obsestoque"></div>
+        <h3>Observações do Barrarel</h3>
+        <div id="obsbarrarel"></div>
+        <!--Codigo-->
+        <h3>Código</h3>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="keyword typ">Temporibus</span> aut eveniet dolorum maxime harum <span class="keyword com">aspernatur()</span> natus quibusdam, repudiandae repellat, iste autem dicta possimus
+            consectetur minus? Ad adipisci libero modi distinctio.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum <span class="keyword pln">asperiores</span> tempora explicabo iusto molestias, saepe suscipit omnis numquam, libero totam aperiam ipsam modi quis quo officia voluptas necessitatibus
+            veritatis sit.</p>
+        </div>
+        <h1>Blocos de código</h1>
+        <pre class="html"><code>
+          &lt;pre class=&quot;html&quot;&gt;&lt;code&gt;
+            &lt;!doctype html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                &lt;title&gt;Document&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+
+              &lt;/body&gt;
+            &lt;/html&gt;
+          &lt;/code&gt;&lt;/pre&gt;
+          </code></pre>
+
+        <pre class="css"><code>
+          .css:before { content: "CSS";  }
+          .html:before { content: "HTML"; }
+          .javascript:before { content: "JavaScript"; }
+          .jquery:before { content: "jQuery"; }
+          .php:before { content: "PHP"; }
+          .scss:before { content: "SCSS"; }
+          .sublime-snippet:before { content: "Sublime Snippet"; }
+          </code></pre>
+      </div>
+    </div>
+    <div class="section01" id="move"> <a name="move_api1"></a>
+      <div class="section01-text">
+        <h3>Movimento</h3>
+        <p>Com essa funcionalidade, você consegue fazer a subida de movimentos, de maneira automatizada.</p>
+        <p>Para um melhor entendimento existe a seguinte tabela para conhecer como é o tratamento dos documentos e como é feito a formulação de cada campo, com isso sua empresa e seus XML's estaram sendo importados de maneira segura e automatizada com sucesso.
+        </p>
+        <p>Segue instruções para melhor entendimento e conhecimento de formulação:</p>
+        <h3>Tabela Movoutra.txt</h3>
+        <!--TABELA Movoutra.txt-->
+        <div id="tabmovoutratxt"></div>
+        <!--Observações-->
+        <h3>Observações</h3>
+        <div id="obsmovoutra"></div>
+        <!--Codigo-->
+        <h3>Código</h3>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="keyword typ">Temporibus</span> aut eveniet dolorum maxime harum <span class="keyword com">aspernatur()</span> natus quibusdam, repudiandae repellat, iste autem dicta possimus
+            consectetur minus? Ad adipisci libero modi distinctio.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum <span class="keyword pln">asperiores</span> tempora explicabo iusto molestias, saepe suscipit omnis numquam, libero totam aperiam ipsam modi quis quo officia voluptas necessitatibus
+            veritatis sit.</p>
+        </div>
+        <h1>Blocos de código</h1>
+        <pre class="html"><code>
+          &lt;pre class=&quot;html&quot;&gt;&lt;code&gt;
+            &lt;!doctype html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                &lt;title&gt;Document&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+
+              &lt;/body&gt;
+            &lt;/html&gt;
+          &lt;/code&gt;&lt;/pre&gt;
+          </code></pre>
+
+        <pre class="css"><code>
+          .css:before { content: "CSS";  }
+          .html:before { content: "HTML"; }
+          .javascript:before { content: "JavaScript"; }
+          .jquery:before { content: "jQuery"; }
+          .php:before { content: "PHP"; }
+          .scss:before { content: "SCSS"; }
+          .sublime-snippet:before { content: "Sublime Snippet"; }
+          </code></pre>
+      </div>
+    </div>
+    <section class="section01" id="order"> <a name="order_api1"></a>
+      <div class="section01-text">
+        <h3>Pedido</h3>
+        <p>Na API GZ Sistemas, você consegue fazer a importação de pedidos, as tabelas importantes para esse quesito são a já citada estoque.txt e a que consta a seguir Barrarel.txt, você tem a possibilidade de acompanhar pedidos e importa-los com exatidão sem necessidade de grande esforço e trocas de softwares.</p>
+        <!--TABELA barrarel.txt-->
+        <h3>Tabela Balção.txt</h3>
+        <p>Tabela para pedido em Balcão</p>
+        <div id="tabbalcao"></div>
+        <!--Observações-->
+        <h3>Observações Balcao.txt</h3>
+        <div id="obsbalcao"></div>
+        <p></p>
+        <h3>Código</h3>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="keyword typ">Temporibus</span> aut eveniet dolorum maxime harum <span class="keyword com">aspernatur()</span> natus quibusdam, repudiandae repellat, iste autem dicta possimus
+            consectetur minus? Ad adipisci libero modi distinctio.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum <span class="keyword pln">asperiores</span> tempora explicabo iusto molestias, saepe suscipit omnis numquam, libero totam aperiam ipsam modi quis quo officia voluptas necessitatibus
+            veritatis sit.</p>
+        </div>
+        <h1>Blocos de código</h1>
+        <pre class="html"><code>
+          &lt;pre class=&quot;html&quot;&gt;&lt;code&gt;
+            &lt;!doctype html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                &lt;title&gt;Document&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+
+              &lt;/body&gt;
+            &lt;/html&gt;
+          &lt;/code&gt;&lt;/pre&gt;
+          </code></pre>
+
+        <pre class="css"><code>
+          .css:before { content: "CSS";  }
+          .html:before { content: "HTML"; }
+          .javascript:before { content: "JavaScript"; }
+          .jquery:before { content: "jQuery"; }
+          .php:before { content: "PHP"; }
+          .scss:before { content: "SCSS"; }
+          .sublime-snippet:before { content: "Sublime Snippet"; }
+          </code></pre>
+      </div>
+    </section>
+
+    <!--API2.0-->
+    <section class="section02" id="api2"> <a name="api2"></a>
+      <h3><strong>API 2.0</strong></h3>
+      <h3>Como integrar</h3>
+      <div class="section02-container">
+        <div class="section02-code item">
+          <i class="fa fa-clipboard-list " aria-hidden="true"></i>
+          <h4>Produto</h4>
+          <p></p>
+          <br></br>
+          <a href="#product_api2" class="conceito">Entenda mais</a>
+        </div>
+        <div class="section02-files item">
+          <i class="fa fa-cloud-upload-alt " aria-hidden="true"></i>
+          <h4>Movimento</h4>
+          <p></p>
+          <br></br>
+          <a href="#move_api2" class="conceito">Entenda mais</a>
+        </div>
+        <div class="section02-diamond item">
+          <i class="fa fa-shopping-cart  " aria-hidden="true"></i>
+          <h4>Pedido</h4>
+          <p></p>
+          <br></br>
+          <a href="#order_api2" class="conceito">Entenda mais</a>
+        </div>
+      </div>
+    </section>
+    <section class="section01" id="product"><a name="product_api2"></a>
+      <div class="section01-container">
+        <div class="section01-text">
+          <h3>Produto</h3>
+          <p>A API 2.0 atende a uma formulação mais aprimorada na geração de arquivos XML's, você consegue ter uma organização de dados.</p>
+
+          <!--Codigo-->
+          <h3>Código</h3>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="keyword typ">Temporibus</span> aut eveniet dolorum maxime harum <span class="keyword com">aspernatur()</span> natus quibusdam, repudiandae repellat, iste autem dicta possimus
+              consectetur minus? Ad adipisci libero modi distinctio.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum <span class="keyword pln">asperiores</span> tempora explicabo iusto molestias, saepe suscipit omnis numquam, libero totam aperiam ipsam modi quis quo officia voluptas necessitatibus
+              veritatis sit.
+            </p>
+          </div>
+          <h1>Blocos de código</h1>
+          <pre class="html"><code>
+          &lt;pre class=&quot;html&quot;&gt;&lt;code&gt;
+          &lt;!doctype html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+          &lt;meta charset=&quot;UTF-8&quot;&gt;
+          &lt;title&gt;Document&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+
+          &lt;/body&gt;
+          &lt;/html&gt;
+          &lt;/code&gt;&lt;/pre&gt;
+          </code></pre>
+
+          <pre class="css"><code>
+          .css:before { content: "CSS";  }
+          .html:before { content: "HTML"; }
+          .javascript:before { content: "JavaScript"; }
+          .jquery:before { content: "jQuery"; }
+          .php:before { content: "PHP"; }
+          .scss:before { content: "SCSS"; }
+          .sublime-snippet:before { content: "Sublime Snippet"; }
+          </code></pre>
+        </div>
+      </div>
+    </section>
+    <section class="section01" id="move"> <a name="move_api2"></a>
+      <div class="section01-container">
+        <div class="section01-text">
+          <h3>Movimento</h3>
+          <p>Com a estruturação de movimento na API 2.0, você tem a facilidade de manuseamento de dados como nunca teve antes, uma estrutura totalmente renovada e aprimorada para uma melhor experi³ncia do cliente e do contratante da API.</p>
+          <!--Codigo-->
+          <h3>Código</h3>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="keyword typ">Temporibus</span> aut eveniet dolorum maxime harum <span class="keyword com">aspernatur()</span> natus quibusdam, repudiandae repellat, iste autem dicta possimus
+              consectetur minus? Ad adipisci libero modi distinctio.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum <span class="keyword pln">asperiores</span> tempora explicabo iusto molestias, saepe suscipit omnis numquam, libero totam aperiam ipsam modi quis quo officia voluptas necessitatibus
+              veritatis sit.
+            </p>
+          </div>
+          <h1>Blocos de código</h1>
+          <pre class="html"><code style="color:white;">
+          &lt;pre class=&quot;html&quot;&gt;&lt;code&gt;
+          &lt;!doctype html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+          &lt;meta charset=&quot;UTF-8&quot;&gt;
+          &lt;title&gt;Document&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+
+          &lt;/body&gt;
+          &lt;/html&gt;
+          &lt;/code&gt;&lt;/pre&gt;
+          </code></pre>
+
+          <pre class="css"><code>
+          .css:before { content: "CSS";  }
+          .html:before { content: "HTML"; }
+          .javascript:before { content: "JavaScript"; }
+          .jquery:before { content: "jQuery"; }
+          .php:before { content: "PHP"; }
+          .scss:before { content: "SCSS"; }
+          .sublime-snippet:before { content: "Sublime Snippet"; }
+          </code></pre>
+        </div>
+      </div>
+    </section>
+    <section class="section01" id="order"> <a name="order_api2"></a>
+      <div class="section01-container">
+        <div class="section01-text">
+          <h3>Pedido</h3>
+          <p>O pedido segue o mesmo padrão da API 1.0, porém com uma organização mais aprimorada, buscando uma evolução de organização de dados e estruturação de informação para que o cliente consiga manusear da melhor forma possível todos os dados.</p>
+
+          <!--Codigo-->
+          <h3>Código</h3>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="keyword typ">Temporibus</span> aut eveniet dolorum maxime harum <span class="keyword com">aspernatur()</span> natus quibusdam, repudiandae repellat, iste autem dicta possimus
+              consectetur minus? Ad adipisci libero modi distinctio.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum <span class="keyword pln">asperiores</span> tempora explicabo iusto molestias, saepe suscipit omnis numquam, libero totam aperiam ipsam modi quis quo officia voluptas necessitatibus
+              veritatis sit.
+            </p>
+          </div>
+          <h1>Blocos de código</h1>
+          <pre class="html"><code>
+          &lt;pre class=&quot;html&quot;&gt;&lt;code&gt;
+          &lt;!doctype html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+          &lt;meta charset=&quot;UTF-8&quot;&gt;
+          &lt;title&gt;Document&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+
+          &lt;/body&gt;
+          &lt;/html&gt;
+          &lt;/code&gt;&lt;/pre&gt;
+          </code></pre>
+
+          <pre class="css"><code>
+          .css:before { content: "CSS";  }
+          .html:before { content: "HTML"; }
+          .javascript:before { content: "JavaScript"; }
+          .jquery:before { content: "jQuery"; }
+          .php:before { content: "PHP"; }
+          .scss:before { content: "SCSS"; }
+          .sublime-snippet:before { content: "Sublime Snippet"; }
+          </code></pre>
+        </div>
+      </div>
+    </section>
+    <section class="section02" id="help">
+      <h3>Ajuda</h3>
+      <p style="text-align:center; color:#636363;">E-mail de contato: api@gzsistemas.com.br</p>
+      <p style="text-align:center; color:#636363;">Telefone p/ contato: (11) 3308-8199</p>
+      <div class="section02-container">
+        <!--DUVIDAS-->
+        <div class="section02-code item">
+          <i class="fa fa-question" aria-hidden="true"></i>
+          <h4>Principais duvidas</h4>
+          <div class="info">
+            <div class="buttons">
+              <p>
+                <button type="button" class="btn" data-toggle="modal" data-target="#duvidas">
+                  Veja todas as duvidas
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="duvidas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              </div>
+              <div class="modal-body">
+                <h1 style="margin-left:100px;">Perguntas</h1>
+                <h4 style="text-align:left; margin-left:10px;"><li>duvida2</li></h4>
+                <p style="text-align:left; margin-left:10px;">Resposta: </p>
+                <br>
+                <h4 style="text-align:left; margin-left:10px;"><li>duvida2</li></h4>
+                <p style="text-align:left; margin-left:10px;">Resposta: </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Entendeu? Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--CONTATO-->
+        <div class="section02-files item">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <h4>Contato</h4>
+          <div class="info">
+            <div class="buttons">
+              <p>
+                <button type="button" class="btn" data-toggle="collapse" data-target="#demo">
+                  Fale conosco
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="demo" class="collapse">
+        <div align="center">
+          <div>
+            <div width="50%" align="left" id="divtotal">
+              <div class="" align="center" style="width:600px; margin: 0 auto;">
+                </br>&nbsp;</br>
+                <h3><b>Fale conosco e tire suas dúvidas, dê suas opiniões e fique a vontade para dar sugestões.</b></h3>
+                <br></br>
+              </div>
+            </div>
+            <div class="" align="left" style="width:400px; margin: 0 auto; margin-bottom:100px;">
+              <form class="" action="https://painel.gzcloud.com.br/services/email" method="post">
+                <div class="">
+                  Contato:<br>
+                  <input style="width:100%" type="text" id="nome" required="true" placeholder="Nome">
+                </div>
+                <div class="">
+                  Telefone:<br>
+                  <input style="width:100%" type="tel" id="fone" required="true" placeholder="(xx) xxxx-xxxx" maxlength="15">
+                </div>
+                <div class="">
+                  Email:<br>
+                  <input style="width:100%" type="email" id="email" class="input-text" placeholder="cliente@empresa.com.br" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </div>
+                <div class="">
+                  Mensagem:<br>
+                  <textarea style="width:100%; height:100px;" type="text" id="msg" class="input-text" maxlength="300" placeholder="Mensagem"></textarea>
+                </div>
+                <br><input class="btn " style="background-color:#014563; color:white; margin-left:150px;" type="submit" name="Enviar" value="ENVIAR" onclick="onEnviar();">
+                <br></br>
+                <input type="hidden" name="assunto" value="Contato API GZ Cloud">
+                <input type="hidden" name="destinatarios" value="gzcloud@gzsistemas.com.br">
+                <input type="hidden" name="remetente" value="gzcloud@gzsistemas.com.br">
+                <input type="hidden" name="mensagem" id="mensagem" value="">
+                <input type="hidden" name="redir-para" value="https://painel.gzcloud.com.br/www/equipamento_sucesso.html">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>GZ Sistemas </h3>
+        <p>GZ Sistemas oferece e integra soluções adequadas aos objetivos de empresa de todos os tamanhos, disponibilizando um serviço completo, desde o estudo e a implementação do projeto, desenvolvimento, customização e suporte técnico. </p>
+        <br/>
+        <a href="http://gzsistemas.com.br/" class="conceito">Conheça a GZ Sistemas</a>
+      </div>
+      <div class="footer-right">
+        <h3>GZ Cloud </h3>
+        <p>O GZ Cloud é uma plataforma completa de soluções WEB e Mobile, de maneira segura com todas as utilidades que você precisa para crescer com sua empresa, buscando de maneira simples otimizar o serviços e atividades de sua empresa(TESTE)</p>
+        <br/>
+        <a href="http://gzcloud.com.br/" class="conceito">Conheça o GZ Cloud</a>
+      </div>
+    </div>
+    <strong><p class="copyright">GZ Sistemas © 2018 - Todos os direitos reservados. </p></strong>
+  </footer>
+  </div>
+  <script src="https://gzsistemas.tomticket.com/chat/balaofixo/EP12069/"></script>
+  <script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/jquery-1.10.2.min.js'></script>
+  <script type='text/javascript' src='https://painel.gzcloud.com.br/www/js/ui/jquery-ui.min.js'></script>
+
+  <!-- Font Awesome Script -->
+  <script src="vendor/fontawesome/svg-with-js/js/fontawesome-all.js"></script>
+
+  <!-- Jquery Script -->
+  <script defer src="js/jquery.min.js"></script>
+
+  <!-- Personal Script -->
+  <script defer src="js/index.js"></script>
+
+
+  <script>
+    function onEnviar() {
+      var nome = document.getElementById("nome").value;
+      var fone = document.getElementById("fone").value;
+      var email = document.getElementById("email").value;
+      var msg = document.getElementById("msg").value;
+      document.getElementById("mensagem").value =
+        "Atenção: " + nome + " entrou em contato conosco por meio do Fale conosco da API GZ Sistemas.<br/>" +
+        "Telefone: " + fone + "<br/>" +
+        "Email: " + email + "<br/>" +
+        "Mensagem: " + msg + "<br/>" +
+        "Entre em contato agora mesmo!";
+    }
+  </script>
+</body>
+
+</html>

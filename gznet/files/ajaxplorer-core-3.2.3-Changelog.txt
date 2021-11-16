@@ -1,0 +1,92 @@
+[Features]
+
+Access the AjaXplorer repositories with ajaxplorer users login via the WebDAV protocol.
+"Alias" concept introduced to handle the repositories with a more readable id than the generated 32 characters id... Warning, this imply adding a new "slug" column if using the conf.sql plugin. This is used by the old "AjaXplorer Link" action, and webDAV urls.
+
+[Bug fixes]
+
+Fix dragging & mouse selection problem when the pane is scrolled (kolja bugs)
+Japanese, German and Slovenian translation updated/added.
+Use spl_autoloader to allow adding other autoloaders.
+
+
+[File Changes]
+
+svn diff -r 2015:2051 --summarize
+A       dav.php
+A       plugins\meta.exif\i18n\si.php
+M       plugins\access.ftp\manifest.xml
+M       plugins\access.ftp\class.ftpAccessWrapper.php
+A       plugins\editor.codemirror\i18n\si.php
+A       plugins\meta.svn\i18n\si.php
+A       plugins\meta.serial\i18n\si.php
+M       plugins\access.ajxp_conf\class.ajxp_confAccessDriver.php
+A       plugins\access.ajxp_conf\i18n\si.php
+M       plugins\access.fs\class.fsAccessDriver.php
+M       plugins\access.fs\manifest.xml
+M       plugins\access.fs\fsActions.xml
+A       plugins\editor.exif\i18n\si.php
+A       plugins\editor.openlayer\i18n\si.php
+M       plugins\conf.sql\create.sql
+M       plugins\conf.sql\class.AJXP_User.php
+M       plugins\conf.sql\class.sqlConfDriver.php
+A       plugins\access.ajxp_shared\i18n\si.php
+A       plugins\editor.eml\i18n\si.php
+M       plugins\conf.serial\class.serialConfDriver.php
+A       plugins\access.mysql\resources\i18n\si.php
+A       plugins\access.jsapi\i18n\si.php
+A       plugins\access.wms\i18n\si.php
+A       plugins\uploader.html\i18n\si-dropzone.png
+M       server\xml\standard_conf_actions.xml
+M       server\xml\ajxp_mixins.xml
+M       server\conf\base.conf.php
+M       server\conf\conf.php
+ M      server\conf
+M       server\classes\class.AbstractConfDriver.php
+A       server\classes\ezc\<WHOLE FOLDER CONTENT>
+M       server\classes\class.SystemTextEncoding.php
+M       server\classes\class.AbstractAccessDriver.php
+A       server\classes\class.AJXP_WebdavBackend.php
+M       server\classes\class.ConfService.php
+M       server\classes\class.AJXP_XMLWriter.php
+A       server\classes\interface.AjxpWebdavProvider.php
+A       server\classes\class.AJXP_WebdavAuth.php
+M       server\classes\class.Repository.php
+M       server\classes\class.AJXP_Utils.php
+A       .htaccess
+M       client\i18n\ja.php
+M       client\i18n\eus.php
+M       client\i18n\he.php
+M       client\i18n\fi.php
+M       client\i18n\en.php
+M       client\i18n\cs.php
+M       client\i18n\es.php
+M       client\i18n\fr.php
+M       client\i18n\gr.php
+M       client\i18n\zh-tw.php
+M       client\i18n\nl.php
+A       client\i18n\si.php
+M       client\i18n\pl.php
+M       client\i18n\hu.php
+M       client\i18n\it.php
+M       client\i18n\kr.php
+M       client\i18n\no.php
+M       client\i18n\zh.php
+M       client\i18n\ca.php
+M       client\i18n\da.php
+M       client\i18n\pt-br.php
+M       client\i18n\tr.php
+M       client\i18n\ru.php
+M       client\i18n\de.php
+M       client\i18n\sv.php
+A       client\themes\oxygen\images\i18n\lang_si.gif
+A       client\themes\oxygen\images\actions\22\drive_remote.png
+A       client\themes\oxygen\images\actions\32\drive_remote.png
+A       client\themes\oxygen\images\actions\16\drive_remote.png
+M       client\themes\oxygen\css\allz.css
+M       client\themes\oxygen\css\ajaxplorer.css
+M       client\js\ajaxplorer.js
+M       client\js\lib\prototype\webfx.selectable.js
+M       client\js\ajaxplorer\class.Repository.js
+M       client\js\ajaxplorer\class.AjxpDraggable.js
+M       client\js\ajaxplorer\class.FilesList.js

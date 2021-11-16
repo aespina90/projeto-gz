@@ -1,0 +1,161 @@
+/* CSS GZSISTEMAS */
+
+
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	margin:0 auto;
+	text-align:center;
+}
+
+a {
+	text-decoration:none;
+	color:#3E4289;
+}
+
+.bg_fundo_tabela{
+	background-image: url(imagens/bg_fundo.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color:#E5EAF0;
+}
+
+
+.bg_fundo_newsletter{
+	background-image: url(imagens/bg_newsletter.jpg);
+	background-repeat: no-repeat;
+	width:221;
+	height:148;
+}
+
+.submenu {
+	position:absolute;
+	padding: 0 10px;
+	margin: 0;
+	background-color: #9394C4;
+
+}
+
+.texto_servicos{
+	font-size:11px;
+	font-family:verdana;
+	color:#3E4289;
+}
+
+.texto_titulo{
+	font-size:11px;
+	font-family:verdana;
+	color:#699CD0;
+	font-weight:bold;
+}
+
+.texto_area_restrita{
+	font-size:10px;
+	font-family:verdana;
+	color:#3E4289;
+}
+
+.texto_geral{
+	font-size:11px;
+	font-family:verdana;
+	color:#3E4289;
+	line-height:20px;
+	padding:0 0 0 10px;
+	text-align:justify;
+}
+.texto_geralBOLD{
+	font-size:11px;
+	font-family:verdana;
+	color:#3E4289;
+	line-height:20px;
+	text-align:justify;
+	font-weight:bold;
+}
+
+.texto_esconde{
+	font-size:11px;
+	font-family:verdana;
+	color:#3E4289;
+	line-height:20px;
+	padding:0 0 0 10px;
+	text-align:justify;
+}
+
+.texto_geral2{
+	font-size:11px;
+	font-family:verdana;
+	color:#3E4289;
+	line-height:20px;
+	padding:0 10px 0 10px;
+	text-align:justify;
+	background-color: #F3F7FB;
+}
+
+.texto_geral_titulo{
+	font-size:13px;
+	font-family:verdana;
+	color:#3E4289;
+	margin-left:10px;
+	line-height:20px;
+	font-weight:bold;
+}
+
+.texto_fomularios{
+	font-size:13px;
+	font-family:verdana;
+	color:#3E4289;
+}
+
+
+.interna input{
+	margin:2px 0 2px 5px;
+	color:#3E4289;
+}
+
+.interna select{
+	margin:2px 0 2px 5px;
+	color:#3E4289;
+}
+
+.interna textarea{
+	margin:2px 0 2px 5px;
+	color:#3E4289;
+}
+
+.img_noticias{
+	float:left;
+	margin:5px;
+	border:0;
+}
+
+.bg_conosco_titulo {
+	background-color:#C3D4E6;
+	font-size:15px;
+	font-family:verdana;
+	color:#ffffff;
+	font-weight:bolder;
+	text-align:center;
+	}
+
+.bg_conosco_cont {
+	background-color:#E5EAF0;
+	font-size:11px;
+	font-family:verdana;
+	color:#3E4289;
+	}
+
+.bg_menu {
+	background-image: url(imagens/img_azul.jpg);
+	background-repeat: repeat-x;
+}
+
+.envie_amigo {
+	font-size:10px;
+	font-family:verdana;
+	color:#000000;
+	text-align:center;
+
+
+}

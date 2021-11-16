@@ -1,0 +1,165 @@
+@font-face {
+    font-family:'Roboto';
+    src: url("./../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family:'Raleway';
+    src: url("./../fonts/Raleway/Raleway-Regular.ttf");
+}
+html{
+    position:relative !important;
+    min-height:100% !important;
+}
+body{
+  font-size: 16px;
+    margin:0;
+    font-family:'Raleway', sans-serif !important;
+}
+/* Application CSS - Menu Style - Big Screens */
+.application-menu{
+    background-color:#313338;
+}
+.application-menu ul{
+    padding:0;
+    margin:0;
+    display:flex;
+    align-items:center;
+}
+.application-menu ul .application-menu-options-desktop{
+    display:flex;
+    align-items:center;
+}
+.application-menu ul a{
+    padding:24px;
+    cursor:pointer;
+    list-style:none;
+    font-size:14px;
+    margin-right:10px;
+    color:#F4F4F4;
+    text-decoration:none;
+}
+.application-menu ul .application-menu-options-desktop a:hover{
+    font-weight:600;
+    background-color:#014563;
+    box-shadow: 0 14px 22px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+/* Application CSS - Footer */
+.footer{
+  font-size: 13px;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:12px;
+    color:#FFF;
+    text-align:center;
+    position:absolute;
+    background:#014563;
+}
+.footer .footer-information-center{
+    margin-left:-216px;
+}
+.mobile-options{
+    width:100%;
+    height:100%;
+    background:rgba(68,68,68,0.5);
+    z-index:2;
+    top:0;
+    display:none;
+    position:absolute;
+}
+.mobile-options .close-button{
+    top:25px;
+    right:25px;
+    z-index:3;
+    position:absolute;
+    font-size:56px;
+    color:#FFF;
+    cursor:pointer;
+}
+.mobile-options .options{
+    top:50%;
+    left:50%;
+    font-size:38px;
+    text-align:center;
+    font-weight:bold;
+    color:#FFF;
+    transform:translate(-50%, -50%);
+    position:absolute;
+}
+.mobile-options .options a{
+    color:#F4F4F4;
+    text-decoration:none;
+}
+.mobile-options .options a:hover{
+    text-decoration:underline;
+}
+/* Application CSS - Mobile Menu Style - Hide While Big Screens */
+.application-menu ul .application-menu-options-mobile{
+    display:none;
+}
+/* Application CSS - Menu Style - Medium Screens */
+@media only screen and (max-width: 1280px){
+    .application-menu ul{
+        justify-content:space-between !important;
+    }
+    .application-menu-options-desktop{
+        display:none !important;
+    }
+    .application-menu-options-mobile{
+        display:block !important;
+    }
+    .application-menu-options-mobile a{
+        margin:0;
+        padding-right:6px !important;
+        font-size:20px !important;
+    }
+}
+/* Application CSS - Menu Style - Low Screens */
+@media only screen and (max-width: 500px){
+    .mobile-options .options{
+        font-size:30px;
+    }
+    .close-button{
+        font-size:48px !important;
+    }
+    .left{
+        float:none !important;
+        display:block !important;
+    }
+    .footer-information-center{
+        display:block;
+        margin-left:0 !important;
+        margin-top:8px !important;
+    }
+}
+/* Application CSS - General Styles - Padding */
+.p-md{
+    padding:15px;
+}
+.p-l-md{
+    padding-left:15px;
+}
+.p-l-lg{
+    padding-left:25px;
+}
+.p-r-md{
+    padding-right:15px;
+}
+/* Application CSS - General Styles - Margin */
+.m-t-sm{
+    margin-top:10px;
+}
+.m-t-md{
+    margin-top:15px;
+}
+/* Application CSS - General Styles - Display */
+.block{
+    display:block;
+}
+/* Application CSS - General Styles - Float */
+.right{
+    float:right;
+}
+.left{
+    float:left;
+}

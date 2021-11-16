@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <p style="color:red;">* NFC-e
+    <br>** (NFC-e e CF-e SAT)</p>
+  <p><strong>Observação 1 - Tipo de registro</strong></p>
+  <ul style="margin-left:40px;">
+    <li>01 - Venda de Item</li>
+    <li>02 - Abatimento (Desconto) sobre total do Cupom</li>
+    <li>03 - Finalizador de Venda</li>
+    <li>04 - Cancelamento de Cupom</li>
+    <li>05 - Acréscimo sobre Total do Cupom</li>
+    <li>06 - Contra-Vale emitido</li>
+    <li>07 - Cupom Vasilhame</li>
+    <li>08 - Ticket de Troca Emitido</li>
+    <li>09 - Correção de Finalizador</li>
+    <li>10 - Cancelamento de Item</li>
+    <li>11 - Cancelamento de Venda</li>
+    <li>12 - Troco de Finalizador</li>
+    <li>13 - Identificação do Cliente (CAT)</li>
+    <li>14 - Promoção Campanha</li>
+    <li>15 - Cartão Fidelidade</li>
+    <li>16 - Sangria</li>
+    <li>17 - Dados para geração de registro R06 - Ato Cotepe 06/08</li>
+    <li>18 - Identificação do Cliente (Lei Anti-Álcool)</li>
+    <li>20 - SuperTroco (Observação 54)</li>
+    <li>21 - Entrada em Caixa (Reforço)</li>
+    <li>22 - Saída no Caixa</li>
+    <li>23 - Abertura de Caixa</li>
+    <li>24 - Fechamento de Caixa </li>
+    <li>25 - Encerramento de Dia ( Redução Z ) </li>
+    <li>26 – Redução Gerencial Z </li>
+    <li>27 – Email marketing (Observação 55) </li>
+    <li>30 - Emissão Cupom sobre Pedido (No Campo Código do Cliente será gravado o número do Pedido de origem) </li>
+    <li>35 - Aferição (Tanque/Bico ) </li>
+    <li>36 – Abastecimento (Observação 53) </li>
+    <li>40 - Cancelamento Compra Cartão Próprio / Autorizadores </li>
+    <li>41 - Cancelamento Compra Cartão Crédito Rotativo </li>
+    <li>42 - Cancelamento Transação TEF DISCADO </li>
+    <li>43 - Cancelamento Transação TEF </li>
+    <li>44 - Cancelamento de Pagamento de Conta </li>
+    <li>45 - Cancelamento de Recebimento de Conta de Cliente Loja </li>
+    <li>50 - Cadastro de Senha de Cliente </li>
+    <li>60 - Pagamento de Conta </li>
+    <li>70 - Recebimento de Conta de Cliente Loja </li>
+    <li>80 - Correspondente Bancário </li>
+    <li>81 - Saque Cartão ( Compra&Saque e Troco-Fácil )</li>
+    <li>82 - Correspondente Bancário ( Banco Completo )</li>
+    <li>90 - Recarga de Celular </li>
+  </ul>
+  <p><strong>Observação 2 - </strong>O campo <strong>Tipo do Produto</strong> será preenchido com a letra F quando se tratar de uma fórmula assim como os itens desta fórmula viram em seguida preenchidos com a letra C. Em todos os outros casos ele estará
+    em branco.</p>
+  <p><strong>Observação 3 - </strong>O campo <strong>Código do Finalizador de Venda</strong> virá sempre preenchido com 3 dígitos.Exemplo:<strong>001, 010, 150, etc...</strong> </p>
+  <p><strong>Observação 4 - </strong>O campo CGC/CPF irá conter <strong>a máscara.</strong> Exemplo:</p>
+  <ul style="list-style-type:none; margin-left:20px;">
+    <li>CPF: 12345678910 <strong>123.456.789-10</strong></li>
+    <li>CPF: 1234567891 <strong>012.345.678-91</strong></li>
+    <li>CGC: 12345678000123 <strong>012.345.678/0001-23</strong></li>
+    <li>CGC: 123456789000123 <strong>123.456.789/0001-23</strong></li>
+  </ul>
+  <br>
+  <p><strong>Observação 5 - </strong>Para manter a compatibilidade com versões anteriores, sempre que o <strong>NÚMERO DA CONTA CORRENTE (CHEQUE)</strong>, for menor que 10 dígitos, serão atualizados os campos <strong>Antigo e Atual Número da Conta.</strong>    As retaguardas que estiverem utilizando o manual para interligação versão 5.00 ou superior deverão utilizar apenas o campo <strong>Atual Número da Conta.</strong></p>
+  <p><strong>Observação 6 - </strong>O campo <strong>CMC7</strong> será atualizado quando o Tipo do Registro for <strong>03 (Finalizador de Venda)</strong>, o <strong>Código do Finalizador de Venda</strong> for igual a <strong>Cheque ou Cheque- Pré</strong>    e o PDV possuir leitor de CMC-7 instalado.</p>
+  <p><strong>Observação 7 - </strong>O campo <strong>CMC7</strong> será preenchido com o <strong>NÚMERO DO DOCUMENTO</strong> quando o </strong>Tipo do Registro for 60 (Pagamento de Conta)</strong> e com a <strong>OBSERVAÇÃO DIGITADA PELO OPERADOR DE CAIXA</strong>    quando o <strong>Tipo do Registro</strong> for <strong>21 ou 22 (Entrada em Caixa / Saída no Caixa).</strong></p>
+  <p><strong>Observação 8 - </strong>Os campos referentes ao cheque, serão atualizados quando o <strong>Tipo do Registro for 03 (Finalizador de Venda)</strong> e o <strong>Código do Finalizador de Venda</strong> for igual a <strong>Cheque ou Cheque-Pré.</strong></p>
+  <p><strong>Observação 9 - </strong>Os campos <strong>Código da Empresa ,Código do Cliente e Tipo do Cliente</strong> serão atualizados sempre que o cliente, seja convênio ou loja, for informado.</p>
+  <p><strong>Observação 10 - </strong> Somente será uma venda convênio ou fiado quando os campos <strong>Código da Empresa, Código do Cliente e Tipo do Cliente</strong> estiverem preenchidos, o <strong>Tipo do Registro</strong> for igual a <strong>03 (Finalizador de Venda) e o Código do Finalizador de Venda</strong>    for igual a Convênio. De outra forma será apenas um registro da compra do cliente informado.</p>
+  <p><strong>Observação 11 - </strong> Quando o <strong>Tipo do Registro</strong> for igual a<strong> 07 (Cupom Vasilhame)</strong> o número do cupom vasilhame virá no campo <strong>Condição de Pagamento.</strong></p>
+  <p><strong>Observação 12 - </strong> Quando o <strong>Tipo do Registro</strong> for igual a <strong>50 (Cadastro de Senha de Cliente)</strong> a senha digitada pelo cliente virá no campo <strong>1º Documento Digitado.</strong></p>
+  <p><strong>Observação 13 - </strong> Quando o <strong>Tipo do Registro</strong> for igual a <strong>25 (Encerramento de Dia - Redução Z)</strong> o <strong>Número do Documento</strong> virá com o número do ultimo cupom impresso, o <strong>Contador de Ordem de Operação (COO)</strong>    virá com o número do ultimo COO, o <strong>Número de Ordem do Item no Cupom</strong> virá com o número do contador de redução (CRZ), o <strong>1º Documento Digitado</strong> virá com o valor do GT inicial, o 2º <strong>Documento Digitado</strong>    virá com o valor do GT final, o <strong>3º Documento Digitado</strong> virá com o valor da venda bruta e o <strong>4º Documento Digitado</strong> virá com o valor da venda líquida.</p>
+  <p><strong>Observação 14 - </strong> Quando o <strong>Tipo do Registro</strong> for igual a <strong>60 (Pagamento de Conta)</strong> o <strong>Valor Total</strong> virá com o valor pago pelo cliente no pdv.</p>
+  <p><strong>Observação 15 - </strong> Quando o <strong>Tipo do Registro</strong> for igual a <strong>70 (Recebimento de Conta de Cliente Loja) o Valor Total</strong> virá com o valor pago pelo cliente no pdv.</p>
+  <p><strong>Observação 16 - </strong> O campo Tipo do Documento Pagamento de Conta será preenchido com o <strong>Código do Tipo de Documento</strong> ( cadastrado no módulo concentrador ) quando o <strong>Tipo do Registro for 60 (Pagamento de Conta).</strong></p>
+  <p><strong>Observação 17 - </strong>O campo <strong>Valor do Troco</strong> será preenchido quando o <strong>Tipo do Registro</strong> for igual a <strong>03 ( Finalizador de Venda ).</strong> Esse valor deverá ser utilizado quando houver a necessidade
+    de se obter o valor líquido do finalizador. Exemplo: Para uma compra com valor total R$ 90,00 que foi recebida com finalizador de venda 003 no valor de R$ 100,00, os campos virão preenchidos da seguinte forma.
+    <br>Código do Finalizador de Venda: <strong>003</strong>
+    <br>Valor Total: <strong>R$ 100,00</strong>
+    <br>Valor do Troco: <strong>R$ 10,00</strong></p>
+  <p><strong>Observação 18 -</strong> O campo <strong>Tributação</strong> será preenchido quando o <strong>Tipo do Registro</strong> for igual a<strong>01 ( Venda de Item ).</strong> Este campo é composto pela legenda da tributação e do valor da alíquota
+    utilizada. Exemplo:
+    <br><strong>F00.00 Substituição Tributário
+			<br>I00.00 Isento
+			<br>T18.00 Tributado - ICMS 18%
+			<br>S04.00 Tributado - Serviço 4%</strong></p>
+  <p><strong>Observação 19 - </strong><strong>Quando o Tipo do Registro for igual a 03 (Finalizador de Venda) o campo Documento Digitado</strong> será preenchido quando no cadastro de Modalidade de Pagamento (Finalizador) estiver configurado para que o PDV
+    solicite o documento.
+    <br><strong>CAMPO45 – Primeiro Documento Digitado</strong> -
+    <strong>Tipo do Registro for igual a 01</strong>, este campo terá o Código de Barras do Produto.
+    <br><strong>CAMPO49 – Terceiro Documento Digitado</strong> -
+    <strong>Tipo do Registro for igual a 01</strong>, este campo terá o da Fórmula, quando este produto for um componente.
+    <br><strong>CAMPO50 – Quarto Documento Digitado</strong> -
+    <strong>Quando o Tipo do cupom for NFC-e e o Tipo do Registro for igual a 01</strong>, este campo terá a CSOSN do produto.
+    <br><strong>Quando o Tipo do Registro for igual a 60 (Pagamento de Conta) e o Tipo de Conta for TecTotal</strong> o campo <strong>1º Documento Digitado</strong> conterá o número do certificado e o campo <strong>3º Documento Digitado</strong> conterá
+    o código do FTP no formato TEC:
+    <código com 4 dígitos>.
+      <br><strong>Quando o Tipo do Registro for igual a 60 (Pagamento de Conta) e o Tipo de Conta for B2C</strong> o campo <strong>3º Documento Digitado</strong> conterá a flag B2C para indicar o tipo de conta.</p>
+  <p><strong>Observação 20 - </strong>O campo <strong>Condição de Pagamento</strong>,será preenchido com o <strong>Número do Ticket  de Troca</strong> quando o <strong>Tipo do Registro for 03 (Finalizador de Venda)</strong> e no cadastro de Modalidade de
+    Pagamento (Finalizador) estiver configurado para que o PDV solicite o documento.</p>
+  <p><strong>Observação 21 - </strong>Quando o <strong>Tipo do Registro for igual a 09 (Correção de Finalizador) o 1º Documento Digitado</strong> virá com o número do cupom fiscal de origem, o <strong>Valor Total</strong> virá com o valor da correção, o
+    <strong>2º Documento Digitado</strong> virá com o finalizador de origem e o <strong>3º Documento Digitado</strong> virá com o finalizador de destino. Os outros campos seram preenchidos de acordo com o finalizador de destino, seguindo o mesmo padrão
+    do <strong>Tipo de Registro 03 ( Finalizador de Venda ). O Registro 03 ( Finalizador de Venda )</strong> do cupom fiscal de origem será atualizado com os novos dados do finalizador.</p>
+  <p><strong>Observação 22 - </strong>O campo <strong>Supervisor</strong> será preenchido com o código do supervisor que autorizou a transação quando a mesma foi negada por algum motivo.</p>
+  <p><strong>Observação 23 - </strong>Quando o <strong>Frente de Loja</strong> estiver configurado e trabalhando no modo 24 horas, este campo virá com a data referente ao movimento, quando não estiver configurado terá o mesmo valor do campo data.</p>
+  <p><strong>Observação 24 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>01 (Venda de Item)</strong> esse campo terá o valor do desconto concedido no item. Lembrando que esse valor é apenas informativo, o campo <strong>Valor Total</strong>    contém o valor líquido do item, ou seja, já abatido esse valor. O sistema deverá estar parametrizado para imprimir preço promoção direto como N, caso contrário esse campo será gravado com 0,00
+  </p>
+  <p><strong>Observação 25 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>01 (Venda de Item)</strong> esse campo terá o valor do abatimento concedido no cupom ( rateado pelo valor total do item ). Esse campo é útil quando a retaguarda
+    não efetua o rateio automático.</p>
+  <p><strong>Observação 26 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>01 (Venda de Item)</strong> esse campo terá o valor do acréscimo concedido no cupom ( rateado pelo valor total do item ). Esse campo é útil quando a retaguarda
+    não efetua o rateio automático.
+  </p>
+  <p><strong>Observação 27 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>11 (Cancelamento de Venda)</strong> indica que o cupom foi cancelado ainda aberto, diferente do <strong>Tipo do Registro 04 (Cancelamento de Cupom)</strong>    que é referente a um cupom que foi finalizado e posteriormente cancelado. Para efeito de venda, este registro <strong>(11 – Cancelamento de Venda)</strong> não deve ser abatido, pois não existirá o registro do cupom como venda.</p>
+  <p><strong>Observação 28 - </strong> Quando o <strong>Tipo do Registro</strong> for igual a <strong>12 (Troco de Finalizador)</strong>, o campo <strong>Código do Finalizador de Venda</strong> virá com o finalizador ao qual o troco se
+refere. Esse tipo de registro foi criado para uso em consultas e relatórios específicos, todo o tratamento necessário ao cupom deve ser feito no <strong>Tipo de Registro 03 (Finalizador de Venda).</strong></p>
+  <p><strong>Observação 29 - </strong> Quando houver cancelamento de um cupom <strong>( Tipo do Registro 04 - Cancelamento de Cupom )</strong>, o campo ,<strong>Indicação de Registro Cancelado</strong> será atualizado com verdadeiro em todos os tipos de registros referente ao cupom cancelado.</p>
+  <p><strong>Observação 30 - </strong> Quando houver correção de finalizador no cupom <strong>( Tipo do Registro 09 )</strong>, o campo <strong>Código do Finalizador de Venda Anterior</strong> será preenchido com o código anterior a correção. Lembrando que em caso de correção de finalizador, os dados do <strong>Tipo do Registro 03 ( Finalizador de Venda )</strong> seram os dados após a correção e não os dados originais.</p>
+  <p><strong>Observação 31 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>10 (Cancelamento de Item)</strong>, não haverá necessidade de se efetuar um abatimento ou cancelamento referente ao mesmo, pois não irá existir um registro de venda <strong>( Tipo do Registro 01 )</strong> em contra-partida ao registro. Esse tipo de registro foi criado para uso em consultas e relatórios específicos, devendo o mesmo ser ignorado para efeito de venda.</p>
+  <p><strong>Observação 32 - </strong> Quando o <strong>Tipo do Registro</strong> for igual a <strong>03 (Finalizador de Venda)</strong>, o campo <strong>Código do Registro Referente ao Finalizador</strong> virá preenchido com o tipo do registro referente ao mesmo. Exemplo:
+<br>Finalizador Referente a um Cupom: <strong>01 – Venda de Item</strong>
+<br>Finalizador de um Pagamento de Conta: <strong>60 – Pagamento de Conta</strong>
+<br>Finalizador de um Correspondente Bancário: <strong>80 – Correspondente Bancário</strong></p>
+  <p><strong>Observação 33 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>03 (Finalizador de  Venda)</strong>  e  o  finalizador for do tipo <strong>Troca</strong>, o campo <strong>Número do Ticket de Troca</strong> virá preenchido com o ticket de troca utilizado.</p>
+  <p><strong>Observação 34 - </strong>Registro utilizado para o controle de bombas de combustível.</p>
+  <p><strong>Observação 35 - </strong>O campo <strong>DESCITEM</strong> será preenchido com a quantidade quando o <strong>Tipo do Registro</strong> for igual a <strong>35 (Iniciante Tanque/Bico)</strong> ou <strong>37 (Encerrante Tanque/Bico).</strong></p>
+  <p><strong>Observação 36 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>24 (Fechamento de Caixa) o Valor Unitário</strong> virá com o valor total da venda do operador e o <strong>Valor Total</strong> virá com o troco final.</p>
+  <p><strong>Observação 37 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>01 (Venda de Item)</strong> esse campo terá o valor do abatimento concedido no cupom relativo a produto/preço/múltiplos ( rateado pelo valor total do item ).</p>
+  <p><strong>Observação 38 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a ,<strong>01 (Venda de Item)</strong> esse campo terá o valor do abatimento concedido no cupom relativo a promoção campanha( rateado pelo valor total do item ).</p>
+  <p><strong>Observação 39 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>01 (Venda de Item)</strong> e o produto estiver configurado para solicitar descrição complementar, o campo <strong>Número do Cartão ( Crédito Rotativo Interno )<strong> será preenchido com a descrição complementar.</p>
+  <p><strong>Observação 40 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>13 (Identificação do Cliente - CAT)</strong> o campo <strong>CGC/CPF (Cheque)</strong> será preenchido com o CPF/CNPJ, o campo <strong>1º Documento Digitado</strong> será preenchido com o nome do cliente e o campo <strong>CMC7</strong> será preenchido com o endereço do cliente.
+</p>
+  <p><strong>Observação 41 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>14 (Promoção Campanha)</strong> o campo <strong>Código do Finalizador de Venda</strong> será preenchido com o finalizador relativo ao desconto, o campo <strong>1º Documento Digitado</strong> será preenchido com o tipo do desconto e o campo <strong>2º Documento Digitado</strong> será preenchido com o código da promoção campanha.</p>
+  <p><strong>Observação 42 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>81 (Saque Cartão)</strong> o campo <strong>Valor Total</strong> será preenchido  com  o  troco  devolvido  ao  cliente  na  transação  de  cartão  ( TEF ).</p>
+  <p><strong>Observação 43 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>01 (Venda de Item)</strong> esse campo terá o valor do acréscimo concedido no item. Lembrando que esse valor é apenas informativo, o campo <strong>Valor Total</strong> contém o valor líquido do item, ou seja, já acrescido esse valor. O sistema deverá estar parametrizado para imprimir preço promoção direto como N, caso contrário esse campo será gravado com 0,00</p>
+  <p><strong>Observação 44 - </strong>Pela regra definida no ato cotepe 06/08 <strong>( PAF-ECF )</strong> o contador para DAV ou Pedido passa a ter 10 dígitos obrigatoriamente. Quando o frente de loja estiver utilizando o regime do PAF-ECF, os campos </strong>Número da PV / Comanda</strong> e o <strong>Número do DAV / Pedido</strong> seram atualizados conforme o tipo do documento processado pelo frente de loja. Para efeito de compatibilidade com versões anteriores, quando o frente de loja não estiver utilizando o regime do PAF-ECF, o campo <strong>Número do DAV / Pedido</strong> será atualizado com o mesmo conteúdo do <strong>campo Número da PV / Comanda.</strong></p>
+  <p><strong>Observação 45 - </strong></strong>Quando o Tipo do Registro for igual a 15 (Cartão Fidelidade)</strong> o campo <strong>1º Documento Digitado</strong> será preenchido com o número do cartão fidelidade.</p>
+  <p><strong>Observação 46 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>03 (Finalizador de  Venda)</strong> e  o  finalizador for do tipo <strong>TEF</strong>, o campo <strong>Número do Cartão (Crédito Rotativo)</strong> virá preenchido com o código de autorização para as transações de crédito (15 posições no máximo). <strong style="color:blue;">(Somente para Versão Flex)</strong></p>
+  <p><strong>Observação 47 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>18 (Identificação do Cliente – Lei AntiÁlcool)</strong> o campo <strong>1º Documento Digitado</strong> será preenchido com o número do documento de identidade (RG) do cliente e o <strong>2º Documento Digitado</strong> será preenchido com o nome. <strong style="color:blue;">(Somente para Versão Flex)</strong></p>
+  <p><strong>Observação 48 - </strong>Será gravado a ST que estiver cadastrada na tributação do produto (tabela  tributa), quando status do registro for <strong>01</strong></p>
+  <p><strong>Observação 49 - </strong>Será gravado a CFOP de venda (NFC-e e CF-e  -  SAT),  quando  status do registro for <strong>01</strong></p>
+  <p><strong>Observação 50 - </strong>Será gravado o valor fixo <strong>9</strong> para identificar um cliente DMCard (SOU+), quando status do registro for <strong>03</strong></p>
+  <p><strong>Observação 51 - </strong>Quando NFC-e (Modelo 65) – Será  gravado  o  protocolo  de  autorização fornecido pela SEFAZ no momento da venda, <strong>em todos os registros do cupom.</strong>
+Quando CF-e (Modelo 59) – Será gravado o número de série do SAT que efetuou a venda e o número do extrato fornecido pelo SAT no formato abaixo: <strong>SSSSSSSSSXXXXXX</strong>, onde S será o número de série do SAT e o X, será o número do extrato.</p>
+  <p><strong>Observação 52 - </strong><strong>No registro de Finalizador de Venda (STATUS 03)</strong>, quando o cliente for participante do programa SOU+, será gravado nesse campo o CPF informado no programa, em qualquer forma de pagamento adotada pelo mesmo.
+<br><strong>Exemplo:</strong>
+<br>a. CPF do Cliente SOU+: 111.111.111-11
+<br>b. CPF do Cliente da Loja: 222.222.222.-22
+<br> Na geração do registro de STATUS 03:
+<br>Campo 20(CGC) será gravado a informação b <strong>(222.222.222.-22)</strong>
+<br>Campo 54(COD.BARRAS) será gravado a informação a <strong>(111.111.111-11)</strong>
+</p>
+  <p><strong>Observação 53 - </strong>Quando o <strong>Tipo do Registro</strong> for igual a <strong>36</strong>, será gerado um registro para cada combustível coletado. Os campos específicos serão gravados da seguinte forma:
+</p>
+<table style="width:500px; margin-left:300px;">
+  <thead>
+  </thead>
+  <tbody>
+<tr style="background-color:#fec32b; font-style: oblique;">
+  <td>Tabela Abastecimentos (origem)</td>
+  <td>Campo na MOVOUTRA</td>
+</tr>
+<tr>
+  <td>Encerrante Inicial</td>
+  <td>Campo 45</td>
+</tr>
+<tr>
+  <td>Encerrante Final</td>
+  <td>Campo 48</td>
+</tr>
+  </tbody>
+</table>
+<br>
+  <p><strong>Observação 54 - </strong>Quando houver SuperTroco, o status 12 permanece da mesma forma, ou seja,   irá ter o valor do troco devolvido ao cliente, o <strong>status 20</strong> terá no campo <strong>VALORTOT</strong> o valor do SuperTroco que o cliente aceitou pagar para participar.</p>
+  <p><strong>Observação 55 - </strong>Quando houver utilização de PDV Mobile, as informações de e-mail marketing serão gravadas como abaixo:
+<br><br><strong>Campo CGC</strong> – Será gravado o CPF/CNPJ informado.
+<br><strong>Campo CMC7</strong> – Será gravado o e-mail informado.</p>
+
+
+</body>
+
+</html>

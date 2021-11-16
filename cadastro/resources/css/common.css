@@ -1,0 +1,6 @@
+tr td .botao-alterar{
+	visibility: hidden;
+}
+tr:hover .botao-alterar{
+	visibility: visible;
+}

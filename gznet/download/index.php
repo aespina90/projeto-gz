@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0;url=ftp://ftp.gznet.com.br">

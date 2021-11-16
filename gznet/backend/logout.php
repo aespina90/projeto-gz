@@ -1,0 +1,14 @@
+<?php
+/**
+* ./logout.php
+* @author Maikel Finck maikel@logicadigital.com.br
+* @copyright (c) 2006 Lógica Digital
+* Descrição: Encerra a aplicação.
+*/
+//*** Início da sessão
+	session_start() ;
+//*** Destrói a sessão
+	session_destroy() ;
+//*** Retorna para a página de autenticação
+	header ( "location: index.php" ) ;
+?>

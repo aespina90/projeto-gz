@@ -1,0 +1,107 @@
+a{
+    cursor: pointer;
+}
+table{
+    width:auto;
+    border: 0px solid #000000;
+}
+/*Define as configurações que serão usadas na célula da tabela*/
+td{
+    border: 0px solid #000000;
+}
+.linha{
+    background-color:#ffffff;
+    border: 0px solid #000000;
+}
+table{
+    width:100%;
+    border: 1px solid #c6c6c6;
+    border-spacing: 0px;
+}
+img {
+    border:none
+}
+.linhas{
+    background: url("../images/fundo_indice.png");
+    font-family: arial;
+    font-size: 8pt;
+    line-height: 22px;
+    border: 0px solid #000000;
+}
+.linhas_cod{
+    background: url("../images/fundo_indice.png");
+    font-family: arial;
+    font-size: 8pt;
+    line-height: 22px;
+    border: 0px solid #000000;
+    text-align:left;
+    width:30px;
+}
+
+.linhas1{
+    background: url("../images/fundo_indice2.png");
+    font-family: arial;
+    font-size: 8pt;
+    line-height: 22px;
+    border: 0px solid #000000;
+    text-align: center;
+    width: 22px;
+}
+#editar, #excluir, #codigo{
+    width:22px;
+    text-align:center
+}
+#titulo{
+    border-bottom: 1px solid #c6c6c6;
+    background: url("../images/fundo_indice1.png");
+    clear: left;
+    line-height: 22px;
+    margin-top: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-family: verdana;
+    padding-left: 3px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.linhaSelecionada{
+    background-color: #B6C1E0; font-weight:bold;
+}
+.aviso{
+    border: thin solid #aeaeae;
+    font-size:12pt;
+    font-weight:bold;
+    color:#ffffff;
+    padding-bottom:10px;
+    padding-top:50px;
+    background:url(images/loader.gif) no-repeat center #006699;
+}
+#uf, #nome, #login, #senha, #ct, #ar, #el, #pc, #ts, #em, #qw, #editar, #excluir, #ok, #infos{
+    text-align: center;
+    background: url("../images/fundo_indice1.png");
+    line-height: 22px;
+    color: #fff;
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 10px;
+}
+#codigo{
+    text-align: center;
+    background: url("../images/fundo_indice1.png");
+    line-height: 22px;
+    color: #fff;
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 10px;
+}
+
+
+#ct, #ar, #el, #pc, #ts, #em, #qw, #ok{
+    width: 20px;
+    background: url("../images/fundo_indice3.png");
+}
+.inputedit{
+    font-family: verdana;
+    font-size: 11px;
+}

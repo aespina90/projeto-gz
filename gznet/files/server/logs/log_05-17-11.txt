@@ -1,0 +1,19 @@
+05-17-11 10:47:33	187.113.144.143	INFO	shared	Create User	user_id=admin
+05-17-11 10:47:48	187.113.144.143	INFO	admin	Log In	
+05-17-11 10:48:39	187.113.144.143	INFO	admin	Switch Repository	rep. id=1
+05-17-11 10:48:46	187.113.144.143	INFO	admin	Switch Repository	rep. id=0
+05-17-11 10:49:27	187.113.144.143	INFO	admin	Update Password	user_id=admin
+05-17-11 10:49:30	187.113.144.143	INFO	admin	Log Out	
+05-17-11 10:49:37	187.113.144.143	INFO	admin	Log In	
+05-17-11 10:53:03	187.113.144.143	INFO	admin	Switch Repository	rep. id=1
+05-17-11 10:57:22	187.113.144.143	INFO	admin	Switch Repository	rep. id=0
+05-17-11 12:03:04	187.113.144.143	INFO	admin	Log In	
+05-17-11 12:10:45	187.113.144.143	INFO	admin	Log In	
+05-17-11 12:11:44	187.113.144.143	INFO	admin	Upload File	file=/portalgz.com.br/DSC03563.JPG
+05-17-11 12:24:52	187.113.144.143	INFO	admin	Upload File	file=/portalgz.com.br/manual_completo_moodle.pdf
+05-17-11 12:31:02	187.113.144.143	INFO	admin	Switch Repository	rep. id=1
+05-17-11 12:31:58	187.113.144.143	INFO	admin	Create Repository	repo_name=GZ Sistemas
+05-17-11 12:32:06	187.113.144.143	INFO	admin	error	message=You must have the php ssh2 extension active!
+05-17-11 12:35:52	187.113.144.143	INFO	admin	Edit Repository	repo_name=GZ Sistemas
+05-17-11 12:36:49	187.113.144.143	INFO	admin	Switch Repository	rep. id=0
+05-17-11 13:12:37	187.113.144.143	INFO	admin	Log Out	
